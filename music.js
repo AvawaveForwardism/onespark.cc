@@ -13,3 +13,4 @@ var bgImage = document.getElementById("playImage");
     button.innerHTML = '<i class="fa fa-play"><img id="playImage" src="https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/images/Red_flag_II.svg.png"></i>';
     }
     });
+

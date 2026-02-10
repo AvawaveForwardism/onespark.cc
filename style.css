@@ -208,7 +208,6 @@ containers
     color: black;
     background-image: url('https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/images/360_F_338033184_8oKq8czljHGktFpBPpytrJAHIZyBMLyL.jpg'); /* change this later to a different image */
     background-size: 100% 100%;
-    /* background: linear-gradient(217deg, rgb(255 0 0 / 80%), transparent 70.71%), linear-gradient(127deg, rgb(0 255 0 / 80%), transparent 70.71%), linear-gradient(336deg, rgb(0 0 255 / 80%), transparent 70.71%); */
     transition-property: letter-spacing;
     transition-duration: 0.5s;
   }
@@ -284,14 +283,6 @@ containers
   background-color: white;
 }
 
-#superevents {
-  height: 500px;
-  width: 469px;
-  margin: auto;
-  vertical-align: middle;
-  background-image: url(https://file.garden/ZsJltiD-bXBSm0-A/tv.png);
-}
-
 @keyframes dividerAnimation {
   0% {background: crimson;
   box-shadow: 0px 0px 1px crimson, 0px 0px 3px crimson, 0px 0px 5px crimson, 0px 0px 7px crimson;
@@ -308,13 +299,230 @@ containers
 
 .divider {
   border: black 3px solid;
-  border-radius: 5px;
+  border-radius: 1px;
   height: 1%;
   margin: auto;
   animation-name: dividerAnimation;
   animation-duration: 8s;
   animation-iteration-count: infinite;
 }
+  /*
+  ================================================================================
+  writings stylization
+  ================================================================================
+  */
+  .homeContainer {
+    position: relative;
+    background-color: white;
+    color: rgb(148, 0, 0);
+    height: auto;
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    border: #ebcc00 3px solid; 
+    box-shadow: 0px 0px 5px black, 0px 0px 5px black;
+    border-radius: 5px;
+  }
+    .mainWritingsText {
+      color: rgb(148, 0, 0);
+      font-size: 12px;
+    }
+  
+  .writingsHomeButton{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    background-color: white;
+    width: 20%;
+    border: black 2px solid;
+    border-radius: 3px;
+    font-family: 'BPmono';
+    font-weight: bolder;
+    font-size: 1.5vw;
+    box-shadow: 0px 0px 5px black;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+  }
+    .writingsHomeButton:hover{
+      background-color: rgb(250, 215, 215);
+    }
+    .writingsHomeButtonImage{
+      height: 10%;
+      width: 10%;
+      transform: translateY(15%);
+    }
+
+.genericContainerMirror {
+  position: relative;
+  border: #ebcc00 3px solid; 
+  box-shadow: 0px 0px 5px black, 0px 0px 5px black;
+  border-radius: 5px;
+  width: 80%;
+  height: auto;
+  width: auto;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding-top: 3%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+  background-size: 100% 100%;
+  background-color: white;
+}
+  
+  .writingsHomeButtonMirror{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    background-color: white;
+    width: 10%;
+    border: black 2px solid;
+    border-radius: 3px;
+    font-family: 'BPmono';
+    font-weight: bolder;
+    font-size: 1.5vw;
+    box-shadow: 0px 0px 5px black;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+  }
+    .writingsHomeButtonMirror:hover{
+      background-color: rgb(250, 215, 215);
+    }
+    .writingsHomeButtonImageMirror{
+      height: 20%;
+      width: 20%;
+      transform: translateY(15%);
+    }
+
+  .writingsLinkButton {
+    background-color: white;
+    color: rgb(148, 0, 0);
+    border: #570101 1px solid; 
+    border-radius: 2px;
+    width: 360px;
+    height: 120px;
+    margin: 0.2%;
+    padding-top: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 2px;
+    font-family: 'BPmono';
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: left;
+    transition: background-color, text-decoration;
+    transition-duration: 0.5s;
+  }
+
+  .writingsLinkButton:hover {
+    background-color: rgb(248, 216, 216);
+    text-decoration: underline;
+  }
+
+  .buttonDescrisptorText {
+    color: #570101a4;
+  }
+
+  .writingsDivider {
+  border-top: #ff0000 3px dotted;
+  border-radius: 2px;
+  height: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  }
+
+  .introBox {
+    border: red 2px solid;
+    border-radius: 3px;
+    background-color: rgba(220, 20, 60, 0.18);
+    color: crimson;
+    width: 60%;
+    margin: auto;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+    .boxTitleText{
+      color:#e80000;
+      font-size: 2vw;
+      font-weight: bold;
+      text-align: center;
+
+    }
+    .boxHeadingText{
+      color:#e80000;
+      font-size: 1vw;
+      font-weight: bold;
+    }
+    .boxSubHeadingText{
+      color:#e80000;
+      font-size: 0.8vw;
+      font-weight: bold;
+    }
+    .boxSubSubHeadingText{
+      color:#e80000;
+      font-size: 0.6vw;
+      font-weight: bold;
+    }
+    .boxMicroHeadingText {
+      color:#e80000;
+      font-size: 0.4vw;
+      font-weight: bold;
+    }
+    .boxContentMain{
+      color:#e80000;
+      font-size: 1vw;
+      font-weight: bold;
+      text-indent: 1%;
+    }
+    .boxContentSub{
+      color:#e80000;
+      font-size: 0.8vw;
+      font-weight: bold;
+      text-indent: 2%;
+    }
+    .boxContentSubSub{
+      color:#e80000;
+      font-size: 0.6vw;
+      font-weight: bold;
+      text-indent: 3%;
+    }
+
+    .writingsTitleText {
+    color:rgb(240, 180, 0);
+    font-size: 28px;
+    font-weight: bold;
+    }
+
+    #byWrapper{
+      width: 100%;
+    }
+      #byWrapper div {
+        width: 49%;
+        display: inline-block;
+      }
+
+      #right {
+        text-align: right;
+      }
+      #left{
+        text-align: left;
+      }
+    .boxLinks{
+      color: #e80000;
+    }
+  /*
+  ================================================================================
+  writings stylization
+  ================================================================================
+  */
+
   /*
   ================================================================================
   bottom section

@@ -4,14 +4,14 @@
 function menuBarOutput(){
     const html1 = `
         <p style="font-size: 20px;">
-        <i style="text-shadow: 0 0 1px rgb(207, 2, 2), 0 0 3px rgb(249, 22, 22), 0 0 5px rgb(255, 63, 63); color: white;"><b>onespark.cc</b></i>
-        <a href="https://looongmarch.neocities.org"><button class="menuButton">home</button></a>
-        <a href="https://looongmarch.neocities.org/about"><button class="menuButton">about</button></a>
-        <a href="https://looongmarch.neocities.org/writings"><button class="menuButton">writings</button></a>
-        <a href="https://looongmarch.neocities.org/art"><button class="menuButton">art</button></a>
-        <a href="https://looongmarch.neocities.org/recommended"><button class="menuButton">links</button></a>
-        <a href="https://looongmarch.neocities.org/donate"><button class="menuButton">donate</button></a> 
-        <a href="https://looongmarch.neocities.org/sitemap"><button class="menuButton">site map</button></a> 
+        <i style="text-shadow: 0 0 1px rgb(207, 2, 2), 0 0 3px rgb(249, 22, 22), 0 0 5px rgb(255, 63, 63); color: white;"><b>onespark.cc(backup mirror)</b></i>
+        <a href="https://onespark.cc"><button class="menuButton">home</button></a>
+        <a href="https://onespark.cc/about"><button class="menuButton">about</button></a>
+        <a href="https://onespark.cc/writings"><button class="menuButton">writings</button></a>
+        <a href="https://onespark.cc/art"><button class="menuButton">art</button></a>
+        <a href="https://onespark.cc/recommended"><button class="menuButton">links</button></a>
+        <a href="https://onespark.cc/donate"><button class="menuButton">donate</button></a> 
+        <a href="https://onespark.cc/sitemap"><button class="menuButton">site map</button></a> 
     
     `;
     document.getElementById('menuBar').insertAdjacentHTML('beforeend', html1);
@@ -30,7 +30,7 @@ function musicBarOutput(){
         <!-- <audio loop autoplay controls>
         <source src="https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/Music/Site%20Main%20Theme">
         </audio> -->
-        <a href="https://www.youtube.com/watch?v=7_UtzIYwCXo"><button class="menuButton">NOW PLAYING: The Internationale – Sovietwave Version</button></a>
+        <a href="https://www.youtube.com/watch?v=7_UtzIYwCXo"><button class="menuButton">NOW PLAYING: The Internationale â€“ Sovietwave Version</button></a>
     
     `;
     document.getElementById('musicPlayer').insertAdjacentHTML('beforeend', html2);
@@ -61,7 +61,7 @@ function bottomOutputFunction(){
         -->
           <div id="bottomBar">
             <h2> Version:</h2>
-              <p><b><i>From Simple To Advanced!</i></b> 1.0.0 - <span style="color: rgb(43, 209, 43); text-shadow: 0 0 1px rgb(90, 240, 90), 0 0 3px rgb(90, 240, 90), 0 0 5px rgb(90, 240, 90);">Last Updated: Jan 12, 2026</span></p>
+              <p><b><u>Unity ==> Struggle ==> (higher) Unity</u></b> 1.1.0 - <span style="color: rgb(43, 209, 43); text-shadow: 0 0 1px rgb(90, 240, 90), 0 0 3px rgb(90, 240, 90), 0 0 5px rgb(90, 240, 90);">Last Updated: Jan 12, 2026</span></p>
           </div>
         <!-- 
         ================================================================================
@@ -71,6 +71,11 @@ function bottomOutputFunction(){
     
     `;
     document.getElementById('bottomWrapper').insertAdjacentHTML('beforeend', html3);
+}
+
+function criticismsOutputFunction(){
+    const html4 = `<p>All critiques can be directed to my email (AvawaveForward@proton.me) or my twitter (@AvawaveMaoism). I accept criticisms from all well meaning and serious people, only through struggle can higher understanding be developed.</p>`;
+    document.getElementById('someID').insertAdjacentHTML('beforebegin', html4);
 }
 
 // ===============================================================================
@@ -85,6 +90,7 @@ function bottomOutputFunction(){
 menuBarOutput();
 musicBarOutput();
 bottomOutputFunction();
+criticismsOutputFunction();
 // ===============================================================================
 // running functions
 // ===============================================================================
