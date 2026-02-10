@@ -4,7 +4,7 @@
 function menuBarOutput(){
     const html1 = `
         <p style="font-size: 20px;">
-        <i style="text-shadow: 0 0 1px rgb(207, 2, 2), 0 0 3px rgb(249, 22, 22), 0 0 5px rgb(255, 63, 63); color: white;"><b>onespark.cc(backup mirror)</b></i>
+        <i style="text-shadow: 0 0 1px rgb(207, 2, 2), 0 0 3px rgb(249, 22, 22), 0 0 5px rgb(255, 63, 63); color: white;"><b>onespark.cc</b></i>
         <a href="https://onespark.cc"><button class="menuButton">home</button></a>
         <a href="https://onespark.cc/about"><button class="menuButton">about</button></a>
         <a href="https://onespark.cc/writings"><button class="menuButton">writings</button></a>
