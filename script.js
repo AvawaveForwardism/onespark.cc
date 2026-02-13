@@ -30,7 +30,7 @@ function musicBarOutput(){
         <!-- <audio loop autoplay controls>
         <source src="https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/Music/Site%20Main%20Theme">
         </audio> -->
-        <a href="https://www.youtube.com/watch?v=7_UtzIYwCXo"><button class="menuButton">NOW PLAYING: The Internationale â€“ Sovietwave Version</button></a>
+        <a href="https://www.youtube.com/watch?v=7_UtzIYwCXo"><button class="menuButton">NOW PLAYING: The Internationale – Sovietwave Version</button></a>
     
     `;
     document.getElementById('musicPlayer').insertAdjacentHTML('beforeend', html2);
@@ -45,7 +45,7 @@ function bottomOutputFunction(){
         -->
         <div id="sloganBar">
             <div id="sloganSlop"> 
-              <p><b style="font-size: 24px;">TILL ALL REACTION IS WIPED FROM THE FACE OF THE EARTH CARRY HIGH THE BANNER OF MARX, ENGELS, LENIN, STALIN, MAO, GONZALO, AND OTHERS! DEATH TO THE BOYMODE, CAPITALISM, IMPERIALISM AND ALL OPPRESSION! IT IS RIGHT TO REBEL!!</b></p> 
+              <p><b><u>Unity ==> Struggle ==> (higher) Unity</u></b> 1.1.0 - <span style="color: rgb(43, 209, 43); text-shadow: 0 0 1px rgb(90, 240, 90), 0 0 3px rgb(90, 240, 90), 0 0 5px rgb(90, 240, 90);">Last Updated: Feb 13, 2026</span> <a href="https://looongmarch.neocities.org/about/update-log.html">update log</a></p>
             </div>
         </div>
         <!-- 

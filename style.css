@@ -240,14 +240,14 @@ containers
     padding: 5px;
     background: linear-gradient(217deg, rgb(255, 68, 130), transparent 70.71%), linear-gradient(127deg, rgb(21, 249, 234), transparent 70.71%), linear-gradient(336deg, rgb(161, 106, 249), transparent 70.71%);
     box-shadow: 5px 5px rgba(0, 230, 246, 0.8);
-    border: black 3px solid;
+    border: black 2.5px solid;
     border-radius: 50%;
     transition: background-color;
     transition-duration: 1s;
   }
 
     #playImage {
-      height: 75%;
+      height: 67%;
       width: 100%;
     }
   
