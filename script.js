@@ -61,7 +61,7 @@ function bottomOutputFunction(){
         -->
           <div id="bottomBar">
             <h2> Version:</h2>
-              <p><b><u>Unity ==> Struggle ==> (higher) Unity</u></b> 1.1.0 - <span style="color: rgb(43, 209, 43); text-shadow: 0 0 1px rgb(90, 240, 90), 0 0 3px rgb(90, 240, 90), 0 0 5px rgb(90, 240, 90);">Last Updated: Jan 12, 2026</span></p>
+              <p><b><u>Unity ==> Struggle ==> (higher) Unity</u></b> 1.1.0 - <span style="color: rgb(43, 209, 43); text-shadow: 0 0 1px rgb(90, 240, 90), 0 0 3px rgb(90, 240, 90), 0 0 5px rgb(90, 240, 90);">Last Updated: Feb 13, 2026</span> <a href="https://onespark.cc/about/update-log.html">update log</a></p>
           </div>
         <!-- 
         ================================================================================
