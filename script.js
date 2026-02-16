@@ -17,25 +17,6 @@ function menuBarOutput(){
     document.getElementById('menuBar').insertAdjacentHTML('beforeend', html1);
 }
 
-function musicBarOutput(){
-    const html2 = `
-        <button id="playButton"><i class="fa fa-pause"><img id="playImage" src="https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/images/wa.png"></i></button>
-        <audio loop autoplay id="player">
-        <source src='https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/Music/The%20Internationale%20%E2%80%93%20Sovietwave%20Version%20(720p%2C%20h264%2C%20youtube%2C%207_UtzIYwCXo).mp3'>
-        </audio>
-        
-        
-        <!-- <audio loop autoplay id="music" src="https://www.youtube.com/watch?v=7_UtzIYwCXo"></audio> -->
-
-        <!-- <audio loop autoplay controls>
-        <source src="https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/Music/Site%20Main%20Theme">
-        </audio> -->
-        <a href="https://www.youtube.com/watch?v=7_UtzIYwCXo"><button class="menuButton">NOW PLAYING: The Internationale – Sovietwave Version</button></a>
-    
-    `;
-    document.getElementById('musicPlayer').insertAdjacentHTML('beforeend', html2);
-}
-
 function bottomOutputFunction(){
     const html3 = `
         <!-- 
@@ -45,7 +26,7 @@ function bottomOutputFunction(){
         -->
         <div id="sloganBar">
             <div id="sloganSlop"> 
-              <p><b style="font-size: 24px;">TILL ALL REACTION IS WIPED FROM THE FACE OF THE EARTH CARRY HIGH THE BANNER OF MARX, ENGELS, LENIN, STALIN, MAO, GONZALO, AND OTHERS! DEATH TO THE BOYMODE, CAPITALISM, IMPERIALISM AND ALL OPPRESSION! IT IS RIGHT TO REBEL!!</b></p> 
+              <p><b style="font-size: 24px;">UNITE UNDER MAOISM, STRUGGLE TO ANNIHILATE BOURGEOIS IDEOLOGY, AND ADVANCE THE STRUGGLE FOR A NEW AND JUST WORLD</b></p> 
             </div>
         </div>
         <!-- 
@@ -61,7 +42,7 @@ function bottomOutputFunction(){
         -->
           <div id="bottomBar">
             <h2> Version:</h2>
-              <p><b><u>Unity ==> Struggle ==> (higher) Unity</u></b> 1.1.0 - <span style="color: rgb(43, 209, 43); text-shadow: 0 0 1px rgb(90, 240, 90), 0 0 3px rgb(90, 240, 90), 0 0 5px rgb(90, 240, 90);">Last Updated: Feb 13, 2026</span> <a href="https://onespark.cc/about/update-log.html">update log</a></p>
+              <p><b><u>Unity ==> Struggle ==> (higher) Unity</u></b> 1.1.0 - <span style="color: rgb(43, 209, 43); text-shadow: 0 0 1px rgb(90, 240, 90), 0 0 3px rgb(90, 240, 90), 0 0 5px rgb(90, 240, 90);">Last Updated: Feb 17, 2026</span> <a href="https://onespark.cc/about/update-log.html">update log</a></p>
           </div>
         <!-- 
         ================================================================================
