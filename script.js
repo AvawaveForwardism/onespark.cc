@@ -8,17 +8,15 @@ function menuBarOutput(){
         <a href="https://onespark.cc"><button class="menuButton">home</button></a>
         <a href="https://onespark.cc/about"><button class="menuButton">about</button></a>
         <a href="https://onespark.cc/writings"><button class="menuButton">writings</button></a>
-        <a href="https://onespark.cc/art"><button class="menuButton">art</button></a>
         <a href="https://onespark.cc/recommended"><button class="menuButton">links</button></a>
         <a href="https://onespark.cc/donate"><button class="menuButton">donate</button></a> 
-        <a href="https://onespark.cc/sitemap"><button class="menuButton">site map</button></a> 
     
     `;
     document.getElementById('menuBar').insertAdjacentHTML('beforeend', html1);
 }
 
 function bottomOutputFunction(){
-    const html3 = `
+    const html2 = `
         <!-- 
         ================================================================================
         slogan bar
@@ -51,12 +49,12 @@ function bottomOutputFunction(){
         -->
     
     `;
-    document.getElementById('bottomWrapper').insertAdjacentHTML('beforeend', html3);
+    document.getElementById('bottomWrapper').insertAdjacentHTML('beforeend', html2);
 }
 
 function criticismsOutputFunction(){
-    const html4 = `<p>All critiques can be directed to my email (AvawaveForward@proton.me) or my twitter (@AvawaveMaoism). I accept criticisms from all well meaning and serious people, only through struggle can higher understanding be developed.</p>`;
-    document.getElementById('someID').insertAdjacentHTML('beforebegin', html4);
+    const html3 = `<p>All critiques can be directed to my email (AvawaveForward@proton.me) or my twitter (@AvawaveMaoism). I accept criticisms from all well meaning and serious people, only through struggle can higher understanding be developed.</p>`;
+    document.getElementById('someID').insertAdjacentHTML('beforebegin', html3);
 }
 
 // ===============================================================================
@@ -69,9 +67,7 @@ function criticismsOutputFunction(){
 // running functions
 // ===============================================================================
 menuBarOutput();
-musicBarOutput();
 bottomOutputFunction();
-criticismsOutputFunction();
 // ===============================================================================
 // running functions
 // ===============================================================================
