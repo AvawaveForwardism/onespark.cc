@@ -6,6 +6,7 @@ function menuBarOutput(){
         <p style="font-size: 20px;">
         <i style="text-shadow: 0 0 1px rgb(207, 2, 2), 0 0 3px rgb(249, 22, 22), 0 0 5px rgb(255, 63, 63); color: white;"><b>onespark.cc</b></i>
         <a href="https://onespark.cc"><button class="menuButton">home</button></a>
+        <a href="https://onespark.cc/about"><button class="menuButton">about</button></a>
         <a href="https://onespark.cc/writings"><button class="menuButton">writings</button></a>
         <a href="https://onespark.cc/recommended"><button class="menuButton">links</button></a>
         <a href="https://onespark.cc/donate"><button class="menuButton">donate</button></a> 
@@ -39,7 +40,7 @@ function bottomOutputFunction(){
         -->
           <div id="bottomBar">
             <h2> Version:</h2>
-              <p><b><u>Unity ==> Struggle ==> (higher) Unity</u></b> 1.1.0 - <span style="color: rgb(43, 209, 43); text-shadow: 0 0 1px rgb(90, 240, 90), 0 0 3px rgb(90, 240, 90), 0 0 5px rgb(90, 240, 90);">Last Updated: Feb 17, 2026</span> <a href="https://onespark.cc/about/update-log.html">update log</a></p>
+              <p><b><u>Ruthless Criticism</u></b> 1.2.0 - <span style="color: rgb(43, 209, 43); text-shadow: 0 0 1px rgb(90, 240, 90), 0 0 3px rgb(90, 240, 90), 0 0 5px rgb(90, 240, 90);">Last Updated: Mar 11, 2026</span> <a href="https://onespark.cc/about/update-log">update log</a></p>
           </div>
         <!-- 
         ================================================================================

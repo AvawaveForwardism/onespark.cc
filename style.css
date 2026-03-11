@@ -21,7 +21,6 @@
 7PPPPPPP?^    :!J5PPPPPPPPPPPPPPPPPPPPPY775PPPPPP7  
 ~PPPPP?:         .^!?Y5PPPPPPPPPPPP5J!:.  .?PPPP5~
 
-This is my css file, it used to be worse but I suppose it's alright now. Feel free to steal the code idrc. 
 People's war and revolution till communism!
 */
 
@@ -118,9 +117,18 @@ h3 {
 p {
   font-size: 12px 
 }
-
+a {
+  transition-property: color text-shadow;
+  transition-duration: 0.4s;
+}
 a:hover {
   color: red;
+  text-shadow: 0px 0px 3px red;
+}
+
+.quoteText {
+  box-shadow: 0px 0px 8px red;
+  border-radius: 4px;
 }
 
 /*
@@ -163,7 +171,7 @@ containers
 */
 
 .genericContainer {
-  border: #ebcc00 5px solid; 
+  border: #ebcc00 3px solid; 
   box-shadow: 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black;
   border-radius: 5px;
   width: 80%;
@@ -222,7 +230,7 @@ containers
   margin-right: 16px;
   margin-left: 16px;
   color: aquamarine;
-  border: #ebcc00 5px solid;
+  border: #ebcc00 3px solid;
   border-radius: 8px;
   box-shadow: 0px 0px 5px black, 0px 0px 5px black;
   padding: 4px;
@@ -274,7 +282,7 @@ containers
   }
 
 #univChatBox {
-  border: #ebcc00 5px solid; 
+  border: #ebcc00 3px solid; 
   box-shadow: 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black;
   border-radius: 5px;
   width: auto;
@@ -305,7 +313,43 @@ containers
   animation-name: dividerAnimation;
   animation-duration: 8s;
   animation-iteration-count: infinite;
+} 
+
+.linkingButton {
+  border: #fc1f91 3px solid;
+  border-radius: 5px;
+  background-color: rgb(242, 208, 255);
+  box-shadow: 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black;
+  padding-top: 2px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 2px;
+  margin-top: 2%;
+  font-family: 'BPmono';
+  font-weight: bolder;
+  font-size: 18px;
+  color: black;
+  transition-property: box-shadow;
+  transition-duration: 0.5s;
 }
+  .linkingButton:hover{
+    box-shadow: 0px 0px 5px rgb(0, 218, 178);
+
+  }
+
+
+  /*
+  ================================================================================
+  links stylization
+  ================================================================================
+  */
+
+  /*
+  ================================================================================
+  links stylization
+  ================================================================================
+  */
+
   /*
   ================================================================================
   writings stylization
@@ -416,13 +460,14 @@ containers
     font-weight: bolder;
     font-size: 20px;
     text-align: left;
-    transition: background-color, text-decoration;
+    transition: background-color, text-decoration, text-shadow;
     transition-duration: 0.5s;
   }
 
   .writingsLinkButton:hover {
     background-color: rgb(248, 216, 216);
     text-decoration: underline;
+    text-shadow: 0px 0px 5px red;
   }
 
   .buttonDescrisptorText {
@@ -439,7 +484,7 @@ containers
   }
 
   .introBox {
-    border: red 2px solid;
+    border: red 1px solid;
     border-radius: 3px;
     background-color: rgba(220, 20, 60, 0.18);
     color: crimson;
@@ -517,6 +562,36 @@ containers
     .boxLinks{
       color: #e80000;
     }
+  
+  .ReferencesBox {
+    border: blue 1px solid;
+    border-radius: 3px;
+    background-color: rgba(20, 60, 220, 0.18);
+    color: darkblue;
+    width: 85%;
+    margin: auto;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+    .referenceText {
+      color: darkblue;
+      font-size: 16px;
+      text-align: left;
+    }
+
+.writingQuoteText {
+  box-shadow: 0px 0px 4px red;
+  border: red 1px solid;
+  border-radius: 4px;
+}
+
+.bodyText {
+  width: 80%;
+  margin: auto;
+}
+.bodyTextSubWrapper > * {
+  font-size: 14px;
+}
   /*
   ================================================================================
   writings stylization
@@ -541,7 +616,7 @@ containers
     */ 
       #bottomBar {
         position: static;
-        border: #ebcc00 5px solid;
+        border: #ebcc00 3px solid;
         border-radius: 8px;
          box-shadow: 0px 0px 5px black, 0px 0px 5px black;
         height: auto;
@@ -564,7 +639,7 @@ containers
       #sloganBar {
         position: static;
         float: bottom;
-        border: #ebcc00 5px solid;
+        border: #ebcc00 3px solid;
         border-radius: 8px;
         box-shadow: 0px 0px 5px black, 0px 0px 5px black;
         height: auto;
@@ -604,5 +679,4 @@ containers
 containers
 ================================================================================
 */
-
 

@@ -15,15 +15,81 @@
     -->
     <style>
         .disclaimerBox {
-            border: crimson 2px solid;
+            border: crimson 1px solid;
             border-radius: 4px;
-            background-color: rgb(255, 225, 234);
+            background-color: rgba(255, 85, 85, 0.2);
             color: rgb(119, 0, 0);
             padding-left: 8px;
             padding-right: 8px;
             margin-right: 10%;
             margin-left: 10%;
         }
+        #filterBox{
+            margin-bottom: 1%;
+        }
+            #filterLines {
+                display: flex;
+                flex-direction: row;
+                margin-top: 0.2%;
+            }
+            .filterButtons {
+                margin-left: 0.8%;
+                border: rgb(237, 237, 237) 2px solid;
+                height: auto;
+                width: auto;
+                border-radius: 3px;
+                background-color: rgb(237, 237, 237);
+                color: rgb(178, 0, 0);
+                font-family: "BPmono";
+                font-weight: bolder;
+                transition-property: text-shadow, box-shadow;
+                transition-duration: 0.8s;
+            }
+                .filterButtons:hover {
+                    text-shadow: 0px 0px 5px red;
+                    box-shadow: 0px 0px 5px red;
+                }
+                #filteredButton {
+                    margin-left: 0.8%;
+                    border: rgb(178, 0, 0) 2px solid;
+                    height: auto;
+                    border-radius: 3px;
+                    background-color: rgb(178, 0, 0);
+                    color: rgb(255, 255, 255);
+                    font-family: "BPmono";
+                    font-weight: bolder;
+                    transition-property: text-shadow, box-shadow;
+                    transition-duration: 0.8s;
+                }
+                    #filteredButton:hover {
+                        text-shadow: 0px 0px 5px white, 0px 0px 7px white;
+                        box-shadow: 0px 0px 5px goldenrod;
+                    }
+        
+        .linkHoldingBox {
+            border: black 2px solid;
+            border-radius: 2px;
+        }
+            .linkBarThing {
+                border-bottom: grey 1px solid;
+            }
+            .linksContainer {
+                display: flex;
+                flex-direction: row;
+            }
+                .linksContainerLeft {
+                    width: 50%;
+                    text-align: left;
+                    margin: auto;
+                    padding-left: 1%;
+                }
+                .linksContainerRight {
+                    border-left: grey 1px solid;
+                    width: 50%;
+                    text-align: left;
+                    padding-left: 1%;
+                }
+                
     </style>
     <!-- 
     ================================================================================
@@ -71,148 +137,350 @@
 
     <!-- 
     ================================================================================
-    main section
+    main section id="filterButtons"
     ================================================================================
-    -->
+    --> 
     <!-- 
         ================================================================================
         item 1 (1)
         ================================================================================
         -->
             <div class="genericContainer">
-                <p class="titleText">Other Reccomended Sites and Resources</p>
+                <p class="titleText">Other Reccomended Sites & Resources</p>
                     <p>A collection of other useful websites, resources, communities, publications, etc.</p>
+                    <div id="filterBox">
+                        <div id="filterLines"><p>Everything <span style="color: rgba(0, 0, 0, 0);">..................</span>- </p><button id="filteredButton" class="filterButtons allLinks">All</button></div>
+                        <div id="filterLines"><p>Transition & HRT Resources <span style="color: rgba(0, 0, 0, 0);">..</span>- </p><button class="filterButtons hrtAll">All</button> <button class="filterButtons dosing">Dosing Info</button> <button class="filterButtons suppliers">Supplier Aggregators</button> <button class="filterButtons homeBrewing">Homebrewing Guides</button> <button class="filterButtons communities">Communities</button></div>
+                        <div id="filterLines"><p>Marxist Websites & Resources - </p> <button class="filterButtons marxismAll">All</button> <button class="filterButtons orgs">Organizations</button> <button class="filterButtons theo-histo">Theoritical & Historical</button> <button class="filterButtons news">News Publications</button> <button class="filterButtons journo-blog">Journals and Blogs</button> <button class="filterButtons theo-disto">Theory Publishers</button></div>
+                    </div>
                     <div class="disclaimerBox">
                         <p style="color: red; font-size: 20px;"><b>DISCLAIMER/TAKE NOTE/BEWARE</b></p>
-                            <p>I do not necessarily 100% endorse every link provided here nor am I associated with any of them. Additionally in regard to diy hrt links, I am not responsible for any actions of the reader as they must verify themselves the legality of purchasing perscription medications without a prescription within their jurisdiction or any other activity described in the linked sites. I am also not an expert in regards to hrt or anything relating to medicine, thus take any advice I give with a massive grain of salt and conduct your own research. I provide all these links principally for harm reduction or educational purposes.</p>
-                            <p>Also (!!) for enhanced privacy and security I strongly reccomend that the reader access all these links via the tor network or, for when it makes sense, via a secured operating system/device such as tails os. I would also reccomend the reader access this website via its tor address rather than the primary address when the tor address becomes available.</p>
+                            <p>The links provided here are not necessarily 100% endorsed nor is this website, which is completely independent of any group or organization, associated with any of them or endorse all their actions. Additionally, in regard to diy hrt links, this website and those associated with it are not responsible for any actions of the reader as they must verify themselves the legality and safety of purchasing perscription medications without a prescription within their jurisdiction or any other activity described in the linked sites. These links are provided principally for harm reduction or educational purposes.</p>
+                            <p>Also for additional privacy and security it is reccomend that the reader access all these links via the tor network or, for when it makes sense, via a secured operating system/device such as tails os. It is also reccomended that the reader access this website via its tor address rather than the primary address(given on the home page).</p>
                     </div>
 
                     <div class="divider" style="margin-top: 20px;"></div>
+                        <div id="allLinks">
+                            <div id="hrtAll" class="masterFilter">
+                                <p class="headingText">HRT & Transition Resources</p>
+                                    <div id="dosing" class="filter">
+                                        <p class="subHeadingText">Dosing Guides & Info</p>
+                                            <div class="linkHoldingBox">
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://diyhrt.info/">diyhrt.info</a></div>
+                                                        <div class="linksContainerRight"><p>Info on feminizing and masculinizing diy hrt</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://transfemscience.org/">transfem science</a></div>
+                                                        <div class="linksContainerRight"><p>"Transfeminine Science is a resource for original informational content on the subject of transfeminine hormone therapy." (from their home page)</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://papers.lgbt/">papers.lgbt</a></div>
+                                                        <div class="linksContainerRight"><p>collection of papers on hrt</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div id="suppliers" class="filter">
+                                        <p class="subHeadingText">Supplier Aggregators</p>
+                                            <div class="linkHoldingBox">
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://diyhrt.market/">diyhrt.market</a></div>
+                                                        <div class="linksContainerRight"><p>Link aggregator for hrt suppliers</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://hrt.fm/">hrt.fm</a></div>
+                                                        <div class="linksContainerRight"><p>Link aggregator for hrt suppliers and information on masculinzing and feminizing hrt</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
 
-                    <p class="headingText">Resources on African History</p>
-                        <p class="subHeadingText" style="color: black; text-shadow: 1.5px 1.5px rgba(0, 230, 246, 0.8);">there is nothing to display <i style="color: crimson;">yet</i></p>
-                    
-                    <div class="divider" style="margin-top: 20px;"></div>
+                                    <div id="homeBrewing" class="filter">
+                                        <p class="subHeadingText">Homebrewing Guides</p>
+                                            <div class="linkHoldingBox">
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://hrtcafe.net/hrtcat/">HRT Cat</a></div>
+                                                        <div class="linksContainerRight"><p>(feminizing) HRT injectables homebrewing guide</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://hrt.mom/">hrt.mom</a></div>
+                                                        <div class="linksContainerRight"><p>(feminizing) HRT injectables homebrewing guide (they also have a transdermal guide, however it only covers gel. Refer <a href="https://www.reddit.com/r/estrogel/wiki/index/">here</a> for more extensive information on homebrewing transdermal hrt.)</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://garden.lgbt/hrt">garden.lgbt/hrt</a></div>
+                                                        <div class="linksContainerRight"><p>Homebrewing guide containing list of necessary resources for most delivery methods of hrt</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
 
-                    <p class="headingText">HRT and Transition Resources</p>
-                        <p class="subHeadingText">Link and HRT Guide References</p>
-                            <p><a href="https://diyhrt.market/"><button class="menuButton">diyhrt.market</button></a></p>
-                                <p><i>Link aggregator for hrt suppliers</i></p>
-                            <p><a href="https://hrt.fm/"><button class="menuButton">hrt.fm</button></a></p>
-                                <p><i>Link aggregator for hrt suppliers and information on masculinzing and feminizing hrt</i></p>
-                            <p><a href="https://diyhrt.info/"><button class="menuButton">diyhrt.info</button></a></p>
-                                <p><i>Transfem and Transmasc guides to DIY HRT</i></p>
-                            <p><a href="https://transfemscience.org/"><button class="menuButton">transfem science</button></a></p>
-                                <p><i>"Transfeminine Science is a resource for original informational content on the subject of transfeminine hormone therapy." (from their home page)</i></p>
-                            <p><a href="https://papers.lgbt/"><button class="menuButton">papers.lgbt</button></a></p>
-                                <p><i>collection of papers on hormone replacement therapy(hrt)</i></p>
-                            <p><a href="https://hrtcafe.net/hrtcat/"><button class="menuButton">HRT Cat</button></a></p>
-                                <p><i>(feminizing)HRT injectables homebrewing guide</i></p>
-                            <p><a href="https://hrt.mom/"><button class="menuButton">hrt.mom</button></a></p>
-                                <p><i>Another (feminizing)HRT injectables homebrewing guide (they also have a transdermal guide)</i></p>
-                            <p><a href="https://garden.lgbt/hrt"><button class="menuButton">garden.lgbt(/hrt)</button></a></p>
-                                <p><i>Homebrewing guide containing list of necessary resources for major delivery methods of hrt</i></p>
-                        
-                        <p class="subHeadingText">Communities</p>
-                            <p><a href="https://www.reddit.com/r/estrogel/"><button class="menuButton">r/estrogel</button></a></p>
-                                <p><i>Subreddit for homebrewing feminizing and masculinzing transdermal hrt</i></p>
-                            <p><a href="https://www.reddit.com/r/TransDIY/"><button class="menuButton">r/TransDIY</button></a></p>
-                                <p><i>Subreddit for DIY HRT generally</i></p>
+                                    <div id="communities" class="filter">
+                                        <p class="subHeadingText">Communities</p>
+                                            <div class="linkHoldingBox">
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://www.reddit.com/r/estrogel/">r/estrogel</a></div>
+                                                        <div class="linksContainerRight"><p>Subreddit for homebrewing feminizing and masculinzing transdermal hrt</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://www.reddit.com/r/TransDIY/">r/TransDIY</a></div>
+                                                        <div class="linksContainerRight"><p>Subreddit for diy hrt generally</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                            </div>
 
-                    <div class="divider" style="margin-top: 20px;"></div>
+                        <div class="divider" style="margin-top: 20px;"></div>
 
-                    <p class="headingText">Marxist Websites and Resources</p>
-                        <p class="subHeadingText">Organization Websites </p>
-                            <p><a href="https://communistinternational1.wordpress.com/"><button class="menuButton">Communist International</button></a></p>
-                                <p><i>Publication which posts statements from the International Communist League(ICL) and some parties</i></p>
-                            <p><a href="https://philippinerevolution.nu/"><button class="menuButton">Phillipine Revolution Web Central</button></a></p>
-                                <p><i>Communist party of the Phillipines website</i></p>
-                            <p><a href="https://www.tkpml6.net/"><button class="menuButton">TKP*/*ML</button></a></p>
-                                <p><i>Website of TKP*/*ML not to be confused with TKP-ML</i></p>
-                            <p><a href="https://ail-red.com/"><button class="menuButton">Anti-Imperialist League(AIL)</button></a></p>
-                                <p><i>Website of the Anti-Imperialist League (not to be confused with a bunch of other organizations of the same or similar name) which seems to be active in multiple countries</i></p>
-                            <p><a href="https://peoplesstruggle.org/en/"><button class="menuButton">International League of People's Struggles (ILPS)</button></a></p>
-                                <p><i>An anti-imperialist organization active in many countries</i></p>
-                            <p><a href="https://aifgb.wordpress.com/"><button class="menuButton">Anti-Imperialist Front(AIF)</button></a></p>
-                                <p><i>Another anti-imperialist organization in Britain. There are so many with the same name, in fact I know of one which is located in Scotland which is called "AIM" or "the Anti-Imperialist Movement". AIF(gb) and AIM don't have any overlap however.</i></p>
-                            <p><a href="https://fse-national.fr/"><button class="menuButton">Federation Syndicale Etudiante(FSE)</button></a></p>
-                                <p><i>Student's union active in 13 different locations in France</i></p>
-                            <p><a href="https://revolutionarystudentsunion.wordpress.com/"><button class="menuButton">Revolutionary Student's Union(RSU)</button></a></p>
-                                <p><i>Student union active across many US states except the west coast, if I'm not mistaken, due to a split that occured.</i></p>
-                            <p><a href="https://ffps.info/"><button class="menuButton">Friends of the Filipino People in Struggle (FFPS)</button></a></p>
-                                <p><i>An international organization supporting the revolutioanry struggle in the Phillipines</i></p>
-                            <p><a href="https://daretostruggle.org"><button class="menuButton">Dare To Struggle</button></a></p>
-                                <p><i>An organization I include mainly because I find it interesting, it is active in multiple US states. I don't know exactly how to classify them so here is a quote from their mission statement: "Dare to Struggle is a multinational organization open to anyone who wants to resist and stop injustice no matter who holds political office." </i></p>
-                            <p><a href="https://communistischcomitenederland.wordpress.com"><button class="menuButton">Communistisch Comite van Nederland</button></a></p>
-                                <p><i>A Marxist-Leninist-Maoist organization seeking to reconstitute the communist party of the Netherlands</i></p>
-                            <p><a href="https://mcuusa.wordpress.com/"><button class="menuButton">Maoist Communist Union(MCU)</button></a></p>
-                                <p><i>Website of the Maoist Communist Union (NOT the Marvel Cinematic Universe)</i></p>
+                            <div id="marxismAll" class="masterFilter">
+                                <p class="headingText">Marxist Websites & Resources</p>
+                                    <div id="orgs" class="filter"> 
+                                        <p class="subHeadingText">Organizations</p>
+                                            <div class="linkHoldingBox">
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://ci-ic.net/">Communist International</a></div>
+                                                        <div class="linksContainerRight"><p>Publication which posts statements from the International Communist League(ICL) and some parties</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://philippinerevolution.nu/">Phillipine Revolution Web Central</a></div>
+                                                        <div class="linksContainerRight"><p>Communist Party of the Phillipines website</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://www.tkpml6.net/">TKP*/*ML</a></div>
+                                                        <div class="linksContainerRight"><p>Website of TKP*/*ML</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://ail-red.com/">Anti-Imperialist League(AIL)</a></div>
+                                                        <div class="linksContainerRight"><p>An international anti-imperialist organization</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://peoplesstruggle.org/en/">International League of People's Struggles (ILPS)</a></div>
+                                                        <div class="linksContainerRight"><p>An international anti-imperialist organization</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://aifgb.wordpress.com/">Anti-Imperialist Front(AIF)</a></div>
+                                                        <div class="linksContainerRight"><p>Anti-imperialist organization in Britain.</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://fse-national.fr/">Federation Syndicale Etudiante(FSE)</a></div>
+                                                        <div class="linksContainerRight"><p>French Student's Union with 13 different presently active chapters</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://revolutionarystudentsunion.wordpress.com/">Revolutionary Student's Union(RSU)</a></div>
+                                                        <div class="linksContainerRight"><p>American Student's Union with 17 different presently active chapters</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://ffps.info/">Friends of the Filipino People in Struggle (FFPS)</a></div>
+                                                        <div class="linksContainerRight"><p>An international organization supporting the revolutioanry struggle in the Phillipines</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://daretostruggle.org">Dare To Struggle</a></div>
+                                                        <div class="linksContainerRight"><p>American mass org, active in a few states.</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://communistischcomitenederland.wordpress.com">Communistisch Comite van Nederland</a></div>
+                                                        <div class="linksContainerRight"><p>A Marxist-Leninist-Maoist organization seeking to reconstitute the communist party of the Netherlands</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://mcuusa.wordpress.com/">Maoist Communist Union(MCU)</a></div>
+                                                        <div class="linksContainerRight"><p>A self proclaimed Marxist-Leninist-Maoist pre-party formation within the United States <a href="https://newsocietytheoreticaljournal.wordpress.com/2024/06/14/paper-will-put-up-with-whatever-is-written-on-it-exposing-the-right-opportunist-headquarters-in-the-us-communist-movement/">(read this)</a></p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
 
-                        <p class="subHeadingText">Theoretical and Other Informational Resources</p>
-                            <p><a href="https://www.marxists.org/"><button class="menuButton">Marxists Internet Archive</button></a></p>
-                                <p><i>Main repository for most marxist texts</i></p>
-                            <p><a href="http://www.marx2mao.com/"><button class="menuButton">Marx2Mao</button></a></p>
-                                <p><i>Website hosting the classics of Marx, Engels, Lenin, Stalin, and Mao</i></p>
-                            <p><a href="https://www.bannedthought.net/"><button class="menuButton">bannedthought.net</button></a></p>
-                                <p><i>An archive of texts from many different places from across the world and different time periods.</i></p>
-                            <p><a href="https://www.massline.info/"><button class="menuButton">massline.info</button></a></p>
-                                <p><i>An archive of texts relating specifically to the question of the mass line</i></p>
-                            <p><a href="https://redlibrary.info/"><button class="menuButton">Red Library</button></a></p>
-                                <p><i>A collection of Marxist-Leninist-Maoist and progressive works (as stated on their home page)</i></p>
-                            <p><a href="https://socialhistoryportal.org/raf"><button class="menuButton">Rotee Armee Fraktion</button></a></p>
-                                <p><i>Website hosting resources and works on the Red Army Faction.</i></p>
-                            <p><a href="https://socialhistoryportal.org/raf"><button class="menuButton">Struggle Sessions Preservation Project</button></a></p>
-                                <p><i>An archive of articles published on the "Struggle Sessions" website which was taken down at some point. Struggle Sessions was an American publication so the works are most valuable for those in the US. The Works can also be found on red library.</i></p>
+                                    <div id="theo-histo" class="filter">
+                                        <p class="subHeadingText">Theory & History</p>
+                                            <div class="linkHoldingBox">
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://www.marxists.org/">Marxists Internet Archive</a></div>
+                                                        <div class="linksContainerRight"><p>Main repository for most marxist texts<span style="font-size: 8px;"><i>(note: it is run by trotskyists but still has important texts)</i></span></p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="http://www.marx2mao.com/">Marx2Mao</a></div>
+                                                        <div class="linksContainerRight"><p>Website hosting the classics of Marx, Engels, Lenin, Stalin, and Mao</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://www.bannedthought.net/">bannedthought.net</a></div>
+                                                        <div class="linksContainerRight"><p>An archive of revolutionary and progressive texts from many different places from across the world and different time periods.</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://www.massline.info/">massline.info</a></div>
+                                                        <div class="linksContainerRight"><p>An archive of texts relating specifically to the question of the mass line</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://redlibrary.info/">Red Library</a></div>
+                                                        <div class="linksContainerRight"><p>A collection of Marxist-Leninist-Maoist and progressive works</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://socialhistoryportal.org/raf">Rotee Armee Fraktion</a></div>
+                                                        <div class="linksContainerRight"><p>Website hosting resources and works on the Red Army Faction.</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://strugglesessions.org/">Struggle Sessions Preservation Project</a></div>
+                                                        <div class="linksContainerRight"><p>An archive of articles published on the "Struggle Sessions" website, a now defunct American publication.</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
 
-                        <p class="subHeadingText">News-Theoretical Publications</p>
-                            <p><a href="https://theworker.news/"><button class="menuButton">The Worker</button></a></p>
-                                <p><i>A publication based in the US</i></p>
-                            <p><a href="https://the-partisan.org/"><button class="menuButton">The Partisan</button></a></p>
-                                <p><i>Another American based publication</i></p>
-                            <p><a href="https://newlaborpress.org/"><button class="menuButton">New Labor Press</button></a></p>
-                                <p><i>I know of a few American publications, here's another</i></p>
-                            <p><a href="https://tjen-folket.no/"><button class="menuButton">Tjen Folekt</button></a></p>
-                                <p><i>A Norwegian based publication</i></p>
-                            <p><a href="https://demvolkedienen.org"><button class="menuButton">Dem Volke Dienen</button></a></p>
-                                <p><i>A German based publication</i></p>
-                            <p><a href="https://flagrednews.wordpress.com/"><button class="menuButton">Red Flag News</button></a></p>
-                                <p><i>A British based publication</i></p>
-                            <p><a href="https://anovademocracia.com.br/"><button class="menuButton">A Nova Democracia</button></a></p>
-                                <p><i>A Brazilian publication</i></p>
-                            <p><a href="https://www.redspark.nu/"><button class="menuButton">Redspark</button></a></p>
-                                <p><i>A, I presume, internationally based publication</i></p>
-                            <p><a href="https://redherald.org"><button class="menuButton">Red Herald</button></a></p>
-                                <p><i>An internationally based publication</i></p>
+                                    <div id="news" class="filter">
+                                        <p class="subHeadingText">News Publications</p>
+                                            <div class="linkHoldingBox">
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://redherald.org">Red Herald</a></div>
+                                                        <div class="linksContainerRight"><p>An internationally based publication</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://www.redspark.nu/">Redspark</a></div>
+                                                        <div class="linksContainerRight"><p>An internationally based publication</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://anovademocracia.com.br/">A Nova Democracia</a></div>
+                                                        <div class="linksContainerRight"><p>A Brazilian publication</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://tjen-folket.no/">Tjen Folekt</a></div>
+                                                        <div class="linksContainerRight"><p>A Norwegian publication</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://demvolkedienen.org">Dem Volke Dienen</a></div>
+                                                        <div class="linksContainerRight"><p>A German publication</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://theworker.news/">The Worker</a></div>
+                                                        <div class="linksContainerRight"><p>An American publication</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://flagrednews.wordpress.com/">Red Flag News</a></div>
+                                                        <div class="linksContainerRight"><p>A British publication</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://the-partisan.org/">The Partisan</a></div>
+                                                        <div class="linksContainerRight"><p>An American publication</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://newlaborpress.org/">New Labor Press</a></div>
+                                                        <div class="linksContainerRight"><p>An American publication</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
 
-                        <p class="subHeadingText">Journals and Blogs</p>
-                            <p><a href="https://newsocietytheoreticaljournal.wordpress.com"><button class="menuButton">New Society Journal</button></a></p>
-                                <p><i>Journal based in the United States</i></p>
-                            <p><a href="https://dazibaorojo08.blogspot.com/"><button class="menuButton">Dazibao Rojo</button></a></p>
-                                <p><i>A blog that posts in English, Spanish, and from one bookmark I had Arabic. A bit unclear as to where this blog is published from but it seems like some Spanish speaking country. (Also the name of the site translates to "Red Dazibao" or "Red Big Character Poster")</i></p>
-                            <p><a href="https://democracyandclasstruggle.blogspot.com/"><button class="menuButton">Democracy and Class Struggle</button></a></p>
-                                <p><i>A Now Defunct British blog</i></p>
+                                    <div id="theo-disto" class="filter">
+                                        <p class="subHeadingText">Theory Publishers</p>
+                                            <div class="linkHoldingBox">
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://hightidebooks.wordpress.com/">High Tide Publications</a></div>
+                                                        <div class="linksContainerRight"><p>Publisher which has mainly Indian and some anti-revisionist works</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://prairiefirepublishing.com/">Prairie Fire Publishing</a></div>
+                                                        <div class="linksContainerRight"><p>Publisher which provides a wide variety of texts. Particularly Marxist-Leninist-Maoist classics and history.</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
 
-                        <p class="subHeadingText">Theory Publishers/Distributers</p>
-                            <p><a href="https://hightidebooks.wordpress.com/"><button class="menuButton">High Tide Publications</button></a></p>
-                                <p><i>Publisher which has mainly Indian and some anti-revisionist works</i></p>
-                            <p><a href="https://prairiefirepublishing.com/"><button class="menuButton">Prairie Fire Publishing</button></a></p>
-                                <p><i>Publisher which provides a wide variety of texts. Particularly Marxist-Leninist-Maoist classics and history.</i></p>
-                    
-                    <div class="divider"></div>
-
-                    <p class="headingText">Misc Links</p>
-                        <p class="subHeadingText">Site Stylistic Inspirations</p>
-                            <p class="subSubHeadingText">Major</p>
-                                <p><a href="https://ne0nbandit.art"><button class="menuButton">NE0Nbandit Street</button></a></p>
-                                    <p><i>this is actual a random blogish type site I stumbled on a while ago and I'm quite a fan of the vaporwave aesthetic overall so I kind of used it as a jumping off point in stylizing my website, which upon comparison is a bit apparent.</i></p>
-                                
-                            <p class="subSubHeadingText">Minor</p>
-                                <p><a href="https://hrt.fm/"><button class="menuButton">hrt.fm</button></a></p>
-                                    <p><i>This site was actually made by a friend and I liked some of the stylistic components/choices so I decided to borrow some of them in this website. Comparitvely little however, you can see them if you know where to look.</i></p>
-                                
-                                <p><a href="https://lilithdev.neocities.org/"><button class="menuButton">Lilith's Lair</button></a></p>
-                                    <p><i>This site I actually mainly used as a stylistic reference on <i>how</i> to go about constructing a website, very little made it into the final iteration of the site however. I did try copying the music player but couldn't quite figure out how to reverse engineer it (yet) so for now I just settled with the mish mash between the music player on this site and ne0nbandit street.</i></p>
+                                    <div id="journo-blog" class="filter">
+                                        <p class="subHeadingText">Journals & Blogs</p>
+                                            <div class="linkHoldingBox">
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://newsocietytheoreticaljournal.wordpress.com">New Society Journal</a></div>
+                                                        <div class="linksContainerRight"><p>Journal based in the United States</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://dazibaorojo08.blogspot.com/">Dazibao Rojo</a></div>
+                                                        <div class="linksContainerRight"><p>Dazibao Rojo, or Red Daizabao or Red Big Character Poster, is a Marxist-Leninist-Maoist blog</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="linkBarThing">
+                                                    <div class="linksContainer">
+                                                        <div class="linksContainerLeft"><a href="https://democracyandclasstruggle.blogspot.com/">Democracy and Class Struggle</a></div>
+                                                        <div class="linksContainerRight"><p>A Now Defunct British blog</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                            </div>
+                        </div>
+                    <p>To request a link be added or removed, please contact me at <a href="mailto:AvawaveForward@proton.me">AvawaveForward@proton.me</a></p>
             </div>
         <!-- 
         ================================================================================
@@ -239,6 +507,7 @@
     ===============================================================================
     -->
     <script src="/script.js"></script>
+    <script src="/linksFilter.js"></script>
 
       
   </body>
