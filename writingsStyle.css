@@ -29,12 +29,17 @@ People's war and revolution till communism!
 basic styliization
 ================================================================================
 */
+:root {
+    --textRed:     #e80000;
+    --introBoxRed: rgba(220, 20, 60, 0.18);
+}
+
 html {
   overflow-x: hidden;
   background-size: 100% 100%;
   color: black;
   background-color: white;
-  /* background-image: linear-gradient(90deg, #e80000, #ffc9d3); */
+  /* background-image: linear-gradient(90deg, var(--textRed), #ffc9d3); */
   background:
   linear-gradient(217deg, rgba(255, 0, 98, 0.8), transparent 70.71%),
   linear-gradient(127deg, rgba(0, 251, 255, 0.8), transparent 70.71%),
@@ -48,6 +53,7 @@ html {
 body {
   margin: 0;
 }
+
 /*
 ================================================================================
 basic styliization
@@ -66,40 +72,43 @@ text styliization
 }
 
 .globalTitleText {
-    color:#e80000;
+    color: var(--textRed);
     font-size: 28px;
     font-weight: bold;
-    text-shadow: 0 0 8px #e80000;
+    text-shadow: 0 0 8px var(--textRed);
   }
   .titleText {
-    color:#e80000;
+    color:var(--textRed);
     font-size: 28px;
     font-weight: bold;
     text-align: center;
   }
 
   .headingText {
-    color:#e80000;
+    color:var(--textRed);
     font-size: 24px;
     font-weight: bold;
   }
 
   .subHeadingText {
-    color:#e80000;
+    color:var(--textRed);
     font-size: 20px;
     font-weight: bold;
+    text-align: left;
   }
 
   .subSubHeadingText {
-    color:#e80000;
+    color:var(--textRed);
     font-size: 18px;
     font-weight: bold;
+    text-align: left;
   }
 
   .microHeadingText {
-    color:#e80000;
+    color:var(--textRed);
     font-size: 14px;
     font-weight: bold;
+    text-align: left;
   }
 
 h1 {
@@ -115,7 +124,7 @@ h3 {
 }
 
 p {
-  font-size: 12px 
+  font-size: 16px 
 }
 a {
   transition-property: color text-shadow;
@@ -134,32 +143,6 @@ a:hover {
 /*
 ================================================================================
 text styliization
-================================================================================
-*/
-
-/*
-================================================================================
-marks stylization
-================================================================================
-*/
-  .standardMark {
-    background-color: white;
-    border: black 3px solid;
-    border-radius: 8px;
-    padding: 4px;
-  }
-
-  .standardGlobalTitleMark {
-    color: #e80000;
-    background-color: white;
-    border: black 3px solid;
-    border-radius: 8px;
-    padding: 4px;
-  }
-
-/*
-================================================================================
-marks stylization
 ================================================================================
 */
 
@@ -223,97 +206,6 @@ containers
   .menuButton:hover {
     letter-spacing: 3px;
   }
-
-#musicPlayer {
-  height: auto;
-  width: auto;
-  margin-right: 16px;
-  margin-left: 16px;
-  color: aquamarine;
-  border: #ebcc00 3px solid;
-  border-radius: 8px;
-  box-shadow: 0px 0px 5px black, 0px 0px 5px black;
-  padding: 4px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  background-size: 100% 100%;
-  background: linear-gradient(217deg, rgb(253, 65, 162), transparent 70.71%), linear-gradient(118deg, rgb(252, 160, 177), transparent 70.71%), linear-gradient(336deg, rgb(0, 255, 145), transparent 70.71%), linear-gradient(92deg, rgb(0, 191, 255), transparent 70.71%);
-  /* background-image: linear-gradient(#ffa5d6, #f70019); */
-  font-size: 24px;
-}
-
-  #playButton{
-    height: 60px;
-    width: 60px;
-    padding: 5px;
-    background: linear-gradient(217deg, rgb(255, 68, 130), transparent 70.71%), linear-gradient(127deg, rgb(21, 249, 234), transparent 70.71%), linear-gradient(336deg, rgb(161, 106, 249), transparent 70.71%);
-    box-shadow: 5px 5px rgba(0, 230, 246, 0.8);
-    border: black 2.5px solid;
-    border-radius: 50%;
-    transition: background-color;
-    transition-duration: 1s;
-  }
-
-    #playImage {
-      height: 67%;
-      width: 100%;
-    }
-  
-  #playButton:hover {
-    background-color: red;
-  }
-
-  #pauseButton{
-    height: 40px;
-    width: 50px;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0);
-    border: black 5px solid;
-    border-radius: 500px;
-  }
-
-    #pauseImage {
-      height: 100%;
-      width: 100%;
-    }
-  
-  #pauseButton:hover {
-    box-shadow: 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black;
-  }
-
-#univChatBox {
-  border: #ebcc00 3px solid; 
-  box-shadow: 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black;
-  border-radius: 5px;
-  width: auto;
-  height: auto;
-  background-size: 100% 100%;
-  background-color: white;
-}
-
-@keyframes dividerAnimation {
-  0% {background: crimson;
-  box-shadow: 0px 0px 1px crimson, 0px 0px 3px crimson, 0px 0px 5px crimson, 0px 0px 7px crimson;
-  border: crimson 3px solid;}
-
-  50% {background: rgb(255, 200, 0);
-  box-shadow: 0px 0px 1px rgb(255, 200, 0), 0px 0px 3px rgb(255, 200, 0), 0px 0px 5px rgb(255, 200, 0);
-  border: rgb(255, 200, 0) 3px solid;}
-
-  100% {background: crimson;
-  box-shadow: 0px 0px 1px crimson, 0px 0px 3px crimson, 0px 0px 5px crimson, 0px 0px 7px crimson;
-  border: crimson 3px solid;}
-}
-
-.divider {
-  border: black 3px solid;
-  border-radius: 1px;
-  height: 1%;
-  margin: auto;
-  animation-name: dividerAnimation;
-  animation-duration: 8s;
-  animation-iteration-count: infinite;
-} 
 
 .linkingButton {
   border: #fc1f91 3px solid;
@@ -413,8 +305,8 @@ containers
   margin-top: 2%;
   margin-bottom: 2%;
   padding-top: 3%;
-  padding-left: 1%;
-  padding-right: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-bottom: 1%;
   background-size: 100% 100%;
   background-color: white;
@@ -486,58 +378,127 @@ containers
   .introBox {
     border: red 1px solid;
     border-radius: 3px;
-    background-color: rgba(220, 20, 60, 0.18);
+    background-color: var(--introBoxRed);
     color: crimson;
-    width: 60%;
+    width: 80%;
     margin: auto;
     padding-left: 2%;
     padding-right: 2%;
+    overflow-y: hidden;
   }
     .boxTitleText{
-      color:#e80000;
+      color:var(--textRed);
       font-size: 2vw;
       font-weight: bold;
       text-align: center;
 
     }
     .boxHeadingText{
-      color:#e80000;
+      color:var(--textRed);
       font-size: 1vw;
       font-weight: bold;
     }
     .boxSubHeadingText{
-      color:#e80000;
+      color:var(--textRed);
       font-size: 0.8vw;
       font-weight: bold;
     }
     .boxSubSubHeadingText{
-      color:#e80000;
+      color:var(--textRed);
       font-size: 0.6vw;
       font-weight: bold;
     }
     .boxMicroHeadingText {
-      color:#e80000;
+      color:var(--textRed);
       font-size: 0.4vw;
       font-weight: bold;
     }
     .boxContentMain{
-      color:#e80000;
+      color:var(--textRed);
       font-size: 1vw;
       font-weight: bold;
       text-indent: 1%;
     }
     .boxContentSub{
-      color:#e80000;
+      color:var(--textRed);
       font-size: 0.8vw;
       font-weight: bold;
       text-indent: 2%;
     }
     .boxContentSubSub{
-      color:#e80000;
+      color:var(--textRed);
       font-size: 0.6vw;
       font-weight: bold;
       text-indent: 3%;
     }
+    .contentsWrapper {
+        display: flex;
+        flex-direction: row;
+        vertical-align: top;
+        justify-content: center;
+        gap: 2%;
+        width: 100%;
+        margin-top: 2px;
+        margin-bottom: 8px;
+    }
+
+    .buttonsBundler {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+        justify-content: left;
+        margin-top: 30px;
+    }
+
+    .contentsButton {
+        border: black 1px solid; 
+        border-radius: 4px;
+        box-shadow: 3px 3px 0px rgb(0, 0, 133), -3px -3px 0px rgb(133, 0, 0);
+        padding-top: 2px;
+        padding-left: 3px;
+        padding-right: 3px;
+        padding-bottom: 2px;
+        font-family: 'BPmono';
+        font-weight: bolder;
+        font-size: 1vw;
+        color: black;
+        background-color: var(--introBoxRed);
+        background-size: 100% 100%;
+        transition-property: box-shadow, text-shadow, color, background-color;
+        transition-duration: 0.5s;
+    }
+        .contentsButton:hover {
+            box-shadow: 0px 0px 0px black;
+            text-shadow: 0px 0px 1px gold, 0px 0px 3px gold, 0px 0px 5px gold;
+            color: gold;
+            background-color: #a70000;
+        }
+
+    .subContentsButton {
+        border: black 1px solid; 
+        border-radius: 4px;
+        box-shadow: 3px 3px 0px rgb(0, 0, 133), -3px -3px 0px rgb(133, 0, 0);
+        padding-top: 2px;
+        padding-left: 6px;
+        padding-right: 6px;
+        padding-bottom: 2px;
+        font-family: 'BPmono';
+        font-weight: bolder;
+        font-size: 0.5vw;
+        color: black;
+        background-color: var(--introBoxRed);
+        background-size: 100% 100%;
+        transition-property: box-shadow, text-shadow, color, background-color;
+        transition-duration: 0.5s;
+
+    }
+        .subContentsButton:hover {
+            box-shadow: 0px 0px 0px black;
+            text-shadow: 0px 0px 1px gold, 0px 0px 3px gold, 0px 0px 5px gold;
+            color: gold;
+            background-color: #a70000;
+        }
 
     .writingsTitleText {
     color:rgb(240, 180, 0);
@@ -560,7 +521,7 @@ containers
         text-align: left;
       }
     .boxLinks{
-      color: #e80000;
+      color: var(--textRed);
     }
   
   .ReferencesBox {
@@ -598,86 +559,14 @@ containers
   ================================================================================
   */
 
-  /*
-  ================================================================================
-  bottom section
-  ================================================================================
-  */
-    #bottomWrapper {
-      display: grid;
-      grid-gap: 16px;
-      padding: 0px;
-      margin: 16px;
-    }
-    /*
-    ================================================================================
-    bottom bar
-    ================================================================================
-    */ 
-      #bottomBar {
-        position: static;
-        border: #ebcc00 3px solid;
-        border-radius: 8px;
-         box-shadow: 0px 0px 5px black, 0px 0px 5px black;
-        height: auto;
-        width: auto;
-        padding: 2px;
-        background-color: white;
-        font-size: 24px;
-      }
-    /*
-    ================================================================================
-    bottom bar
-    ================================================================================
-    */ 
-
-    /*
-    ================================================================================
-    slogan bar
-    ================================================================================
-    */ 
-      #sloganBar {
-        position: static;
-        float: bottom;
-        border: #ebcc00 3px solid;
-        border-radius: 8px;
-        box-shadow: 0px 0px 5px black, 0px 0px 5px black;
-        height: auto;
-        width: auto;
-        padding: 8px;
-        color: black;
-        background: rgba(255, 0, 0, 0.743)
-      }
-    /*
-    ================================================================================
-    slogan bar
-    ================================================================================
-    */         
-    
-    /*
-    ================================================================================
-    bottom slogan
-    ================================================================================
-    */ 
-    #sloganSlop {
-      color: gold;
-      text-shadow: 0px 0px 1px goldenrod, 0px 0px 3px goldenrod, 0px 0px 5px goldenrod, 0px 0px 7px goldenrod, 0px 0px 9px goldenrod;
-    }
-    /*
-    ================================================================================
-    bottom slogan
-    ================================================================================
-    */
-  /*
-  ================================================================================
-  bottom section
-  ================================================================================
-  */ 
+  
 
 /*
 ================================================================================
 containers
 ================================================================================
 */
+
+
 
 

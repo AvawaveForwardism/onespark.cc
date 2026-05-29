@@ -40,7 +40,7 @@ function bottomOutputFunction(){
         -->
           <div id="bottomBar">
             <h2> Version:</h2>
-              <p><b><u>Ruthless Criticism</u></b> 1.2.0 - <span style="color: rgb(43, 209, 43); text-shadow: 0 0 1px rgb(90, 240, 90), 0 0 3px rgb(90, 240, 90), 0 0 5px rgb(90, 240, 90);">Last Updated: Mar 11, 2026</span> <a href="https://onespark.cc/about/update-log">update log</a></p>
+              <p><b><u>Ruthless Criticism</u></b> 1.2.1 - <span style="color: rgb(43, 209, 43); text-shadow: 0 0 1px rgb(90, 240, 90), 0 0 3px rgb(90, 240, 90), 0 0 5px rgb(90, 240, 90);">Last Updated: May 29, 2026</span> <a href="https://onespark.cc/about/update-log">update log</a></p>
           </div>
         <!-- 
         ================================================================================
