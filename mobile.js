@@ -30,15 +30,15 @@ function mobileThemeChange() {
 function mobileMenuBarOutput(){
     const html1 = `
             <p>
-                <a href="">home</a>
-              • <a href="">about</a>
-              • <a href="">writings</a>
-              • <a href="">links</a>
-              • <a href="">donate</a>
-              • <a href="">updates</a>
+                <a href="/">home</a>
+              • <a href="/about.html">about</a>
+              • <a href="/writings.html">writings</a>
+              • <a href="/recommended.html">links</a>
+              • <a href="/donate.html">donate</a>
+              • <a href="/update-log.html">updates</a>
               • <a href="/">English</a>
-              • <a href="/jp">日本語</a>
-              • <a href="/sw">Kiswahili</a>
+              • <a href="/jp.html">日本語</a>
+              • <a href="/sw.html">Kiswahili</a>
               • <a id="mobileLightDarkButton" class="linkingButton rightSelections" onclick="mobileThemeChange()">☀</a>
             </p>
     `;
