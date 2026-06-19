@@ -53,18 +53,18 @@ function menuBarOutput(){
     const html1 = `
       <div id="leftMenuContent">
           <p style="font-size: 20px;">
-          <b class="siteTitle"><a class="siteTitle" href="/">onespark.cc</a></b>
-          <a href="/index"><button class="linkingButton genPageLinkingButtons menuButton">home</button></a>
-          <a href="/about"><button class="linkingButton genPageLinkingButtons menuButton">about</button></a>
-          <a href="/writings"><button class="linkingButton genPageLinkingButtons menuButton">writings</button></a>
-          <a href="/recommended"><button class="linkingButton genPageLinkingButtons menuButton">links</button></a>
+          <b class="siteTitle">onespark.cc(SW)</b>
+          <a href="/index"><button class="linkingButton genPageLinkingButtons menuButton">nyumbani</button></a>
+          <a href="/about"><button class="linkingButton genPageLinkingButtons menuButton">kuhusu</button></a>
+          <a href="/writings"><button class="linkingButton genPageLinkingButtons menuButton">makala</button></a>
+          <a href="/recommended"><button class="linkingButton genPageLinkingButtons menuButton">viungo</button></a>
           <a href="/donate"><button class="linkingButton genPageLinkingButtons menuButton">donate</button></a> 
-          <a href="/about/update-log"><button class="linkingButton genPageLinkingButtons menuButton">updates</button></a>
+          <a href="/about/update-log"><button class="linkingButton genPageLinkingButtons menuButton">masasisho</button></a>
       
       </div> 
   
       <div id="rightMenuContent">
-        <p>v1.2.2 - <mark class="standardMark"><span class="versionText">Last Updated: June 19, 2026</span></mark></p>
+        <p>v1.2.2 - <mark class="standardMark"><span class="versionText">Last Updated: Juni 19, 2026</span></mark></p>
         <button id="lightDarkButton" class="linkingButton rightSelections" onclick="themeChange()">☀</button>
 
         <div class="dropdown">

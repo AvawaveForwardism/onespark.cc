@@ -7,39 +7,6 @@
     <link rel="icon" type="image/x-icon" href="https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/images/icon.png">
     <!--find the krita file via this link ==> https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/images/icon.kra-->
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-    
-    <!-- 
-    ================================================================================
-    page specific styling
-    ================================================================================
-    -->
-    <style>
-        .currencyBox {
-            border: rgb(157, 157, 157) 1px solid;
-            border-radius: 4px;
-            background-color: rgb(229, 209, 209);
-            margin-top: 1%;
-            padding-left: 5%;
-            padding-right: 5%;
-            text-align: left;
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .addressBox {
-            border: green 1px solid;
-            border-radius: 8px;
-            background-color: rgb(182, 255, 209);
-            color: rgb(1, 65, 1);
-            margin-bottom: 0.2%;
-            padding-left: 1%;
-        }
-    </style>
-    <!-- 
-    ================================================================================
-    page specific styling
-    ================================================================================
-    -->
   </head>
 
 
@@ -56,6 +23,30 @@
   ================================================================================
   -->
   <body>
+    <!-- 
+    ================================================================================
+    mobile view section
+    ===============================================================================
+    -->
+        <div class="mobileViewWrapper">
+          <div id="mobileMenu" class="mobileMenuWrapper">
+          </div>
+
+          <div class="mobileGenContainer">
+            <p class="mobileHeadingText">THERE IS NOTHING TO SEE ON MOBILE AT THE MOMENT, PLEASE COME BACK ANOTHER DAY OR VIEW ON A COMPUTER</p>
+          </div>
+      </div>
+    <!-- 
+    ================================================================================
+    mobile view section
+    ===============================================================================
+    -->
+
+
+
+
+
+    
     <!-- 
     ================================================================================
     top section
@@ -89,9 +80,16 @@
         item 1 (1)
         ================================================================================
         -->
-            <div class="genericContainer">
+            <div class="genericContainer" style="height: 80vh;">
                 <p class="titleText">Donations</p>
                     <p>If you find this site to be useful and would like to support the maintence costs of the site, you can donate via the following addresses:</p>
+                    <p style="font-size: 12px;">(more currencies may be added in the future, if none of these work please ask and I can try and figure something out)</p>
+                    <div style="width: 50%; margin: auto;" class="addressBox">
+                            <p style="text-align: left;"><b>DONATIONS ARE USED FOR THE FOLLOWING:</b></p>
+                            <p style="text-align: left;">-    domain expenses(PRIMARY)</p>
+                            <p style="text-align: left;">-    writing, researching, translating, maintaining, etc, article costs/compensation(SECONDARY)</p>
+                            <p style="text-align: left;">-    site maintainence and improvement(SECONDARY)</p>
+                    </div>
                     <div class="currencyBox">
                         <p style="font-size: 16px;"><b>XMR - Monero:</b></p>
                             <div class="addressBox"><p>83hXAo99E1xXnivxwrEdnaCXfLs7RwfL3etxeNcgCSobimx6atj5gm1Les98t9waY6gq5CQvJxBdfeMD5Pji5j5DVCJqywb</p></div>
@@ -128,6 +126,7 @@
     ===============================================================================
     -->
     <script src="/script.js"></script>
+    <script src="/mobile.js"></script>
 
       
   </body>

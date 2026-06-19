@@ -7,85 +7,6 @@
     <link rel="icon" type="image/x-icon" href="https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/images/icon.png">
     <!--find the krita file via this link ==> https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/images/icon.kra-->
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-    
-      <!-- 
-    ================================================================================
-    page specific styling
-    ================================================================================
-    -->
-    <style>
-        #aboutBox {
-            margin-left: 10%;
-            margin-right: 10%;
-            margin-top: 8px;
-            margin-bottom: 8px;
-            text-align: center;
-            color: black;
-            border: #ebcc00 5px solid;
-            border-radius: 8px;
-            box-shadow: 0px 0px 5px black, 0px 0px 5px black;
-            padding: 8px;
-            background-size: 100% 100%;
-            background-color: white;
-        }
-
-            .aboutBoxTextWrapper {
-                margin-top: 5px;
-                width: auto;
-                border: #ebcc00 5px solid;
-                border-radius: 8px;
-                box-shadow: 0px 0px 5px black, 0px 0px 5px black;
-                background-color: aquamarine;
-                padding: 8px;
-            }
-
-        .twoDivsWrapper {
-            display: flex;
-            flex-direction: row;
-            margin-top: 8px;
-            margin-bottom: 16px;
-        }
-
-            .leftSegment {
-                width: 5%;
-                margin: auto;
-                transform: translateX(100%);
-            }
-
-            .rightSegment {
-                width: 60%;
-                margin: auto;
-            }
-        
-        #additionsWrapper {
-            width: 60%;
-            margin: auto;
-            text-align: left;
-        }
-        .functionalAdditions {
-            box-shadow: 0 0 1px rgb(255, 191, 0), 0 0 3px rgb(255, 191, 0), 0 0 5px rgb(255, 191, 0);
-            border-radius: 4px;
-        }  
-        .contentAdditions {
-            box-shadow: 0 0 1px crimson, 0 0 3px crimson, 0 0 5px crimson;
-            border-radius: 4px;
-        }
-        
-
-        .textHighlight {
-            color: crimson; 
-            text-shadow: 1px 1px rgb(160, 0, 0);
-        }
-
-        #contactsWrapper {
-            margin-left: 35%;
-        }
-    </style>
-    <!-- 
-    ================================================================================
-    page specific styling
-    ================================================================================
-    -->
   </head>
 
 
@@ -102,6 +23,50 @@
   ================================================================================
   -->
   <body>
+    <!-- 
+    ================================================================================
+    mobile view section
+    ===============================================================================
+    -->
+        <div class="mobileViewWrapper">
+          <div id="mobileMenu" class="mobileMenuWrapper">
+          </div>
+
+          <div class="mobileGenContainer">
+                <p class="mobileTitleText">About The Site</p>
+
+                <div class="mobileDivider"></div>
+
+                <p class="mobileHeadingText">A Website for What Purpose?</p>
+                    <p>This website was created with the primary aim of contributing to the struggle of repudiating bourgeois ideas on 2 issues. Firstly the transgender question and secondly the east African liberation struggle. The current stranglehold of bourgeois ideology within both these struggles is suffocating. Redirecting the rage and energy of the oppressed into politics and actions which continue to perpetuate our subjugation.</p>
+                    <p>If we oppressed people are to liberate ourselves we must utilize correct ideas, which Marxism-Leninism-Maoism provides. From this, here are written articles and resources aggregated for the repudiation of bourgeois ideology so that we can strive toward genuine liberation.</p>
+
+                <div class="mobileDivider"></div>
+
+                <p class="mobileHeadingText">Who is "AvawaveForwardism"?</p>
+                    <p>"AvawaveForwardism", or just Ava, is the owner and operator of this webiste. I am a young trans woman currently living in Japan of completely Azanian (east African) descent. I am currently in the third year of my transition.</p>
+                    <p>I am most interested and passionate about Marxism-Leninism-Maoism, computer science, and east African history.</p>
+          </div>
+
+          <div class="mobileGenContainer">
+            <p class="mobileTitleText">Contacts</p>
+                <p><u>email:</u> <a href="mailto:AvawaveForward@proton.me">AvawaveForward@proton.me</a></p>
+          </div>
+          
+      </div>
+    <!-- 
+    ================================================================================
+    mobile view section
+    ===============================================================================
+    -->
+
+
+
+
+
+
+
+
     <!-- 
     ================================================================================
     top section
@@ -135,7 +100,7 @@
         intro box (1)
         ================================================================================
         -->
-        <div id="aboutBox">
+        <div class="genericContainer">
             <p class="titleText">About The Site</p>
                 <div class="twoDivsWrapper">
                     <div class="leftSegment"> 
@@ -193,16 +158,13 @@
                 <div id="contactsWrapper">
                     <div class="twoDivsWrapper">
                         <div class="leftSegment" style="margin-left: -5%;">
-                            <div><img style="height: 80%; width: 80%;" src="https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/images/email_PNG100742-1714194901.png"></div>
+                            <div id="emailButton"><img id="emailImage" src="https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/images/email_PNG100742-1714194901.png"></div>
                         </div>
                         <div class="rightSegment" style="text-align: left; margin-left: -30%;">
                             <p>Email: <a href="mailto:AvawaveForward@proton.me">AvawaveForward@proton.me</a></p>
                         </div>
                     </div>
-                </div>
-
-            <div class="divider"></div> 
-            <a href="https://onespark.cc/about/update-log"><button style="margin-top: 16px;" class="linkingButton">update log page</button></a>       
+                </div>    
           </div>
         <!-- 
         ================================================================================
@@ -229,6 +191,7 @@
     ===============================================================================
     -->
     <script src="/script.js"></script>
+    <script src="/mobile.js"></script>
 
       
   </body>

@@ -35,7 +35,29 @@
   front end stuff 
   ================================================================================
   -->
-  <body>    
+  <body>
+    <!-- 
+    ================================================================================
+    top section
+    ================================================================================
+    --> 
+        <!-- 
+        ================================================================================
+        menu bar
+        ================================================================================
+        --> 
+        <div id=menuBar>
+        </div>
+        <!-- 
+        ================================================================================
+        menu bar
+        ================================================================================
+        --> 
+    <!-- 
+    ================================================================================
+    top section
+    ================================================================================
+    -->         
 
     <!-- 
     ================================================================================
@@ -43,99 +65,280 @@
     ================================================================================
     -->
 		<div class="genericContainerMirror">
-            <p><a href="https://onespark.cc/writings"><button class="writingsHomeButtonMirror"><img src="https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/images/Red_flag_II.svg.png" class="writingsHomeButtonImageMirror">back</button></a></p>
-            <div class="introBox">
-                <div id="byWrapper">
-                  <div id="left">
-                    <p class="boxHeadingText">by: Ava/AvawaveForwardism</p>
-                  </div>
-
-                  <div id="right">
-                    <p class="boxHeadingText">published: [date]</p>
-                  </div>
-                </div>
-
-
-
-
-                <p class="boxHeadingText">Contents:</p>
-                    <p class="boxContentMain"><a class="boxLinks" href="https://onespark.cc/writings/writings-template#:~:text=heading1">Main Thing 1</a></p>
-                        <p class="boxContentSub"><a class="boxLinks" href="https://onespark.cc/writings/writings-template#:~:text=%5Bheading1">Sub Point 1</a></p>
-                        <p class="boxContentSub"><a class="boxLinks" href="https://onespark.cc/writings/writings-template#:~:text=%5Bheading1">Sub Point 2</a></p>
-                    <p class="boxContentMain"><a class="boxLinks" href="https://onespark.cc/writings/writings-template#:~:text=%5Bheading1">Main Thing 2</a></p>
-                        <p class="boxContentSub"><a class="boxLinks" href="https://onespark.cc/writings/writings-template#:~:text=%5Bheading1">Sub Point 1</a></p>
-                        <p class="boxContentSub"><a class="boxLinks" href="https://onespark.cc/writings/writings-template#:~:text=%5Bheading1">Sub Point 2</a></p>
-                    <p class="boxContentMain"><a class="boxLinks" href="https://onespark.cc/writings/writings-template#:~:text=%5Bheading1">Main Thing 3</a></p>
-                        <p class="boxContentSub"><a class="boxLinks" href="https://onespark.cc/writings/writings-template#:~:text=%5Bheading1">Sub Point 1</a></p>
-                        <p class="boxContentSub"><a class="boxLinks" href="https://onespark.cc/writings/writings-template#:~:text=%5Bheading1">Sub Point 2</a></p>
+			  
+        <p class="writingsTitleText"><b>[title] <a href="[link]">“[source]”</a></b><p>
+        
+        <div class="introBox">
+          <div id="byWrapper">
+            <div id="left">
+              <p class="boxHeadingText">by: Ava/AvawaveForwardism</p>
             </div>
-			<p class="writingsTitleText"><b>[title] <a href="[link]">“[source]”</a></b><p>
+
+            <div id="right">
+              <p class="boxHeadingText">published: [date]</p>
+            </div>
+          </div>
+
+
+
+
+          <p class="boxHeadingText">Contents:</p>
+          <div class="contentsWrapper">
+            <div class="buttonsBundler">
+              <a class="boxLinks" href="#heading1"><button class="contentsButton">mainThing1</button></a>
+                <a class="boxLinks" href="#subHeading1"><button class="subContentsButton">subPoint1</button></a>
+                <a class="boxLinks" href="#subHeading2"><button class="subContentsButton">subPoint2</button></a>
+            </div>
+
+            <div class="buttonsBundler">
+              <a class="boxLinks" href="#heading2"><button class="contentsButton">mainThing2</button></a>
+                <a class="boxLinks" href="#subHeading3"><button class="subContentsButton">subPoint3</button></a>
+                <a class="boxLinks" href="#subHeading4"><button class="subContentsButton">subPoint4</button></a>
+            </div>
+
+            <div class="buttonsBundler">
+              <a class="boxLinks" href="#heading3"><button class="contentsButton">mainThing3</button></a>
+                <a class="boxLinks" href="#subHeading5"><button class="subContentsButton">subPoint5</button></a>
+                <a class="boxLinks" href="#subHeading6"><button class="subContentsButton">subPoint6</button></a>
+            </div>
+
+            <div class="buttonsBundler">
+              <a class="boxLinks" href="#heading4"><button class="contentsButton">mainThing4</button></a>
+                <a class="boxLinks" href="#subHeading7"><button class="subContentsButton">subPoint7</button></a>
+                <a class="boxLinks" href="#subHeading8"><button class="subContentsButton">subPoint8</button></a>
+            </div>
+
+            <div class="buttonsBundler">
+              <a class="boxLinks" href="#heading5"><button class="contentsButton">mainThing5</button></a>
+                <a class="boxLinks" href="#subHeading9"><button class="subContentsButton">subPoint9</button></a>
+                <a class="boxLinks" href="#subHeading10"><button class="subContentsButton">subPoint10</button></a>
+            </div>
+
+            <div class="buttonsBundler">
+              <a class="boxLinks" href="#references"><button class="contentsButton">mainThing5</button></a>
+            </div>
+
+            <div class="buttonsBundler">
+              <a class="boxLinks" href="#criticisms"><button class="contentsButton">Criticisms</button></a>
+            </div>
+
+            <div class="buttonsBundler">
+              <a class="boxLinks" href="#references"><button class="contentsButton">References</button></a>
+            </div>
+          </div>
+        <p class="boxHeadingText"><a href="/writings/dir/soso.pdf">PDF Version of this article can be found here</a></p>
+        </div>
+      
+			<p id="heading1" class="headingText"><b>heading1</b></p>
+        <div class="leftText">
+          <p id="subHeading1" class="subHeadingText">subheading1</p>
+            <p>text</p>
+            <p>text</p>
+            <p>text</p>
+
+          <p id="subHeading2" class="subHeadingText">subheading2</p>
+            <p>text</p>
+            <p>text</p>
+            <p>text</p>
+        </div>
+
+      <p id="heading2" class="headingText"><b>heading2</b></p>
+        <div class="leftText">
+          <p id="subHeading3" class="subHeadingText">subheading3</p>
+            <p>text</p>
+            <p>text</p>
+            <p>text</p>
+
+          <p id="subHeading4" class="subHeadingText">subheading4</p>
+            <p>text</p>
+            <p>text</p>
+            <p>text</p>
+        </div>
+
+			<p id="heading3" class="headingText"><b>heading3</b></p>
+        <div class="leftText">
+          <p id="subHeading5" class="subHeadingText">subheading5</p>
+            <p>text</p>
+            <p>text</p>
+            <p>text</p>
+
+          <p id="subHeading6" class="subHeadingText">subheading6</p>
+            
+            <p>text</p>
+            <p>text</p>
+            <p>text</p>
+        </div>
+
+			<p id="heading4" class="headingText"><b>heading4</b></p>
+        <div class="leftText">
+          <p id="subHeading7" class="subHeadingText">subheading7</p>
+            <p>text</p>
+            <p>text</p>
+            <p>text</p>
+
+          <p id="subHeading8" class="subHeadingText">subheading8</p>
+            <p>text</p>
+            <p>text</p>
+            <p>text</p>
+        </div>
+
+			<p id="heading5" class="headingText"><b>heading5</b></p>
+        <div class="leftText">
+          <p id="subHeading9" class="subHeadingText">subheading9</p>
+            <p>text</p>
+            <p>text</p>
+            <p>text</p>
+
+          <p id="subHeading10" class="subHeadingText">subheading10</p>
+            <p>text</p>
+            <p>text</p>
+            <p>text</p>
+        </div>
+
+      <p class="headingText" id="criticisms"><b>CRITICISMS</b></p>
+			  <p id="criticismsText">All critiques can be directed to my email <a href="mailto:AvawaveForward@proton.me">AvawaveForward@proton.me</a>. I accept criticisms from all well meaning and serious people, only through struggle can higher understanding be developed.</p>
 			
-			<p class="headingText"><b>[heading1]</b></p>
-        <p class="subHeadingText">[subheading1]</p>
-          <p>[text]</p>
-          <p>[text]</p>
-          <p>[text]</p>
-
-        <p class="subHeadingText">[subheading2]</p>
-          <p>[text]</p>
-          <p>[text]</p>
-          <p>[text]</p>
-
-      <p class="headingText"><b>[heading2]</b></p>
-        <p class="subHeadingText">[subheading3]</p>
-          <p>[text]</p>
-          <p>[text]</p>
-          <p>[text]</p>
-
-        <p class="subHeadingText">[subheading4]</p>
-          <p>[text]</p>
-          <p>[text]</p>
-          <p>[text]</p>
-
-			<p class="headingText"><b>[heading3]</b></p>
-        <p class="subHeadingText">[subheading5]</p>
-          <p>[text]</p>
-          <p>[text]</p>
-          <p>[text]</p>
-
-        <p class="subHeadingText">[subheading6]</p>
-          <p>[text]</p>
-          <p>[text]</p>
-          <p>[text]</p>
-
-			<p class="headingText"><b>[heading4]</b></p>
-        <p class="subHeadingText">[subheading7]</p>
-          <p>[text]</p>
-          <p>[text]</p>
-          <p>[text]</p>
-
-        <p class="subHeadingText">[subheading8]</p>
-          <p>[text]</p>
-          <p>[text]</p>
-          <p>[text]</p>
-
-			<p class="headingText"><b>[heading5]</b></p>
-        <p class="subHeadingText">[subheading9]</p>
-          <p>[text]</p>
-          <p>[text]</p>
-          <p>[text]</p>
-
-        <p class="subHeadingText">[subheading10]</p>
-          <p>[text]</p>
-          <p>[text]</p>
-          <p>[text]</p>
-
-      <p class="headingText"><b>CRITICISMS</b></p>
-			  <p id="criticismsText">All critiques can be directed to my email (AvawaveForward@proton.me) or my twitter (@AvawaveMaoism). I accept criticisms from all well meaning and serious people, only through struggle can higher understanding be developed.</p>
-		</div>
+      <div class="ReferencesBox">
+			  <p class="boxHeadingText" id="references"><b>REFERENCES</b></p>
+          <p class="referenceText" id="ref1">1 - <a href="link">”title” – author, month year (last updated)</a></p>
+          <p class="referenceText" id="ref2">2 - <a href="link">”title” – author, month year (last updated)</a></p>
+          <p class="referenceText" id="ref3">3 - <a href="link">”title” – author, month year (last updated)</a></p>
+          <p class="referenceText" id="ref4">4 - <a href="link">”title” – author, month year (last updated)</a></p>
+          <p class="referenceText" id="ref5">5 - <a href="link">”title” – author, month year (last updated)</a></p>
+      </div>
+    </div>
 
     <!-- 
     ================================================================================
     main section
     ================================================================================
     -->
+
+
+
+
+
+
+
+
+    <!-- 
+    ================================================================================
+    mobile view section
+    ===============================================================================
+    -->
+        <div class="mobileViewWrapper">
+          <div id="mobileMenu" class="mobileMenuWrapper">
+          </div>
+
+          <div class="mobileGenContainer">
+            <p class="mobileTitleText">Contents</p>
+              <p><u>by:</u></p>
+              <p><u>published:</u></p>
+              <p><u>segments:</u></p>
+                <span style="margin-left: 2%;">
+                  <p>- heading1</p>
+                    <p>-- subheading1</p>
+                    <p>-- subheading2</p>
+
+                  <p>- heading2</p>
+                    <p>-- subheading3</p>
+                    <p>-- subheading4</p>
+
+                  <p>- heading3</p>
+                    <p>-- subheading5</p>
+                    <p>-- subheading6</p>
+
+                  <p>- heading4</p>
+                    <p>-- subheading7</p>
+                    <p>-- subheading8</p>
+
+                  <p>- Criticisms</p>
+
+                  <p>- References</p>
+                </span>
+
+                <p><u>pdf link:</u> <a href="link">download here</a></p>
+          </div>
+
+          <div class="mobileGenContainer">
+            <p class="mobileTitleText">title</p>
+            <p class="mobileHeadingText">subtitle</p>
+            <p class="mobileHeadingText"><b>heading1</b></p>
+                <p class="mobileSubHeadingText">subheading1</p>
+                  <p>text</p>
+                  <p>text</p>
+                  <p>text</p>
+
+                <p class="mobileSubHeadingText">subheading2</p>
+                  <p>text</p>
+                  <p>text</p>
+                  <p>text</p>
+
+            <p class="mobileHeadingText"><b>heading2</b></p>
+                <p class="mobileSubHeadingText">subheading3</p>
+                  <p>text</p>
+                  <p>text</p>
+                  <p>text</p>
+
+                <p class="mobileSubHeadingText">subheading4</p>
+                  <p>text</p>
+                  <p>text</p>
+                  <p>text</p>
+
+            <p class="mobileHeadingText"><b>heading3</b></p>
+                <p class="mobileSubHeadingText">subheading5</p>
+                  <p>text</p>
+                  <p>text</p>
+                  <p>text</p>
+
+                <p class="mobileSubHeadingText">subheading6</p>
+                  
+                  <p>text</p>
+                  <p>text</p>
+                  <p>text</p>
+
+            <p class="mobileHeadingText"><b>heading4</b></p>
+                <p class="mobileSubHeadingText">subheading7</p>
+                  <p>text</p>
+                  <p>text</p>
+                  <p>text</p>
+
+                <p class="mobileSubHeadingText">subheading8</p>
+                  <p>text</p>
+                  <p>text</p>
+                  <p>text</p>
+
+            <p class="mobileHeadingText"><b>heading5</b></p>
+                <p class="mobileSubHeadingText">subheading9</p>
+                  <p>text</p>
+                  <p>text</p>
+                  <p>text</p>
+
+                <p class="mobileSubHeadingText">subheading10</p>
+                  <p>text</p>
+                  <p>text</p>
+                  <p>text</p>
+                
+                <p class="mobileHeadingText">CRITICISMS</p>
+                  <p id="criticismsText">All critiques can be directed to my email <a href="mailto:AvawaveForward@proton.me">AvawaveForward@proton.me</a>. I accept criticisms from all well meaning and serious people, only through struggle can higher understanding be developed.</p>
+          </div>
+
+          <div class="mobileGenContainer">
+              <p class="mobileTitleText">REFERENCES</p>
+                <p id="ref1">1 - <a href="link">”title” – author, month year (last updated)</a></p>
+                <p id="ref2">2 - <a href="link">”title” – author, month year (last updated)</a></p>
+                <p id="ref3">3 - <a href="link">”title” – author, month year (last updated)</a></p>
+                <p id="ref4">4 - <a href="link">”title” – author, month year (last updated)</a></p>
+                <p id="ref5">5 - <a href="link">”title” – author, month year (last updated)</a></p>
+          </div>
+      </div>
+    <!-- 
+    ================================================================================
+    mobile view section
+    ===============================================================================
+    -->
     <script src="/script.js"></script>
+    <script src="/mobile.js"></script>
 
       
   </body>

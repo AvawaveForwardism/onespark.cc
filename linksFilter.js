@@ -70,6 +70,7 @@ function comparison(interest) {
                 descendingLevelsMarxism[2].style.display = "";
                 descendingLevelsMarxism[3].style.display = "";
                 descendingLevelsMarxism[4].style.display = "";
+                descendingLevelsMarxism[5].style.display = "";
             }
         } else if (interest == "hrtAll") {
             for (var i = 0; i < subListLength; i++) {

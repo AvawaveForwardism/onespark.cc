@@ -6,40 +6,7 @@
     <title>writings</title>
     <link rel="icon" type="image/x-icon" href="https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/images/icon.png">
     <!--find the krita file via this link ==> https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/images/icon.kra-->
-    <link href="/writingsStyle.css" rel="stylesheet" type="text/css" media="all">
-
-    <!-- 
-    ================================================================================
-    page specific styling
-    ================================================================================
-    -->
-    <style>
-        .linksWrapper {
-            display: flex;
-            flex-direction: column;
-            width: auto;
-            padding-top: 0.5%;
-            padding-bottom: 0.5%;
-            border: crimson 1px solid;
-            background-color: rgb(229, 229, 229);
-            border-radius: 10px;
-            margin: auto;
-            overflow-x: auto;
-        }
-            .subWrapper {
-                display: flex;
-                flex-direction: row;
-                margin: auto;
-            }
-            .linksBlockWrapper {
-                margin: 0.2%;
-            }
-    </style>
-    <!-- 
-    ================================================================================
-    page specific styling
-    ================================================================================
-    -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
   </head>
 
 
@@ -55,7 +22,84 @@
   front end stuff 
   ================================================================================
   -->
-  <body>    
+  <body>
+    <!-- 
+    ================================================================================
+    mobile view section
+    ===============================================================================
+    -->
+        <div class="mobileViewWrapper">
+          <div id="mobileMenu" class="mobileMenuWrapper">
+          </div>
+
+          <div class="mobileGenContainer">
+            <p class="mobileTitleText">Pinned Writings</p>
+                <a class="mobileArticleLink" href="">Current Drafts List</a>
+                <a class="mobileArticleLink" href="">Make Your Own HRT!</a>
+                <a class="mobileArticleLink" href="">The Day of Heroism For Trans People</a>
+          </div>
+
+          <div class="mobileGenContainer">
+            <p class="mobileTitleText">Marxism Applied to Transition</p>
+                <a class="mobileArticleLink" href="">In Defense of Transition</a>
+          </div>
+
+          <div class="mobileGenContainer">
+            <p class="mobileTitleText">Documents on Marxism-Leninism-Maoism</p>
+                <a class="mobileArticleLink" href="">In Defense of Chairman Mao</a>
+          </div>
+
+          <div class="mobileGenContainer">
+            <p class="mobileTitleText">Documents on HRT & HRT Labs</p>
+                <a class="mobileArticleLink" href="">Make Your Own HRT!</a>
+          </div>
+
+          <div class="mobileGenContainer">
+            <p class="mobileTitleText">Polemical Writings</p>
+                <a class="mobileArticleLink" href="">Trans Rights or Trans Liberation</a>
+                <a class="mobileArticleLink" href="">The Day of Heroism For Trans People</a>
+          </div>
+
+          <div class="mobileGenContainer">
+            <p>For contributions, suggestions, corrections, and critiques, please contact me at <a href="mailto:AvawaveForward@proton.me">AvawaveForward@proton.me</a>. All of which is welcomed and encouraged so long as it is in good faith. Contributions are considered and evaluated on the grounds of ideology, relevance to the site, and overall factual accuracy.</p>
+          </div>
+      </div>
+    <!-- 
+    ================================================================================
+    mobile view section
+    ===============================================================================
+    -->
+
+
+
+
+
+
+
+
+
+    <!-- 
+    ================================================================================
+    top section
+    ================================================================================
+    --> 
+        <!-- 
+        ================================================================================
+        menu bar
+        ================================================================================
+        --> 
+        <div id=menuBar>
+        </div>
+        <!-- 
+        ================================================================================
+        menu bar
+        ================================================================================
+        -->
+    <!-- 
+    ================================================================================
+    top section
+    ================================================================================
+    --> 
 
     <!-- 
     ================================================================================
@@ -67,17 +111,34 @@
         writings (1)
         ================================================================================
         -->
-            <div class="homeContainer">
-                <a href="https://onespark.cc/index"><button class="writingsHomeButton"><img src="https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/images/Red_flag_II.svg.png" class="writingsHomeButtonImage">back to index</button></a> 
+            <div class="homeContainer"> 
                 <p class="titleText">onespark.cc Writings Section</p>
                     <p class="mainWritingsText">Documents on Transgender and African issues from a firmly Marxist-Leninist-Maoist perspective <br> always open to critcism from anyone interested in genuine discussion (unity and higher understanding emerges through struggle)</p>
                     <p class="headingText">Pinned Writings</p>
                         <div class="linksWrapper">  
                             <div class="subWrapper">
                                 <div class="linksBlockWrapper">
-                                    <a href="https://onespark.cc/writings/drafts">
+                                    <a href="/writings/drafts">
                                         <button class="writingsLinkButton">Current Draft List 
                                             <p class="buttonDescrisptorText">- Drafts</p>
+                                        </button>
+                                    </a>
+                                </div>
+
+                                <div class="linksBlockWrapper">
+                                    <a href="/writings/hrt/make-your-own-hrt">
+                                        <button class="writingsLinkButton">Make Your Own HRT!
+                                            <p class="buttonDescrisptorText">- HRT</p>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="subWrapper"> 
+                                <div class="linksBlockWrapper">
+                                    <a href="/writings/polemical/the-day-of-heroism-for-trans-people">
+                                        <button class="writingsLinkButton">The Day of Heroism For Trans People
+                                            <p class="buttonDescrisptorText">- Trans Liberation</p>
                                         </button>
                                     </a>
                                 </div>
@@ -89,7 +150,7 @@
                         <div class="linksWrapper">  
                             <div class="subWrapper">
                                 <div class="linksBlockWrapper">
-                                    <a href="https://onespark.cc/writings/marxism-applied-to-transition/ideologically-unshackling">
+                                    <a href="/writings/marxism-applied-to-transition/ideologically-unshackling">
                                         <button class="writingsLinkButton">In Defense of Transition
                                             <p class="buttonDescrisptorText">- Trans Liberation//Draft</p>
                                         </button>
@@ -103,7 +164,7 @@
                         <div class="linksWrapper">  
                             <div class="subWrapper">
                                 <div class="linksBlockWrapper">
-                                    <a href="https://onespark.cc/writings/mlm/in-defense-of-chairman-mao">
+                                    <a href="/writings/mlm/in-defense-of-chairman-mao">
                                         <button class="writingsLinkButton">In Defense of Chairman Mao
                                             <p class="buttonDescrisptorText">- Anti-Revisionism//Guest Writer</p>
                                         </button>
@@ -118,7 +179,7 @@
                         <div class="linksWrapper"> 
                             <div class="subWrapper"> 
                                 <div class="linksBlockWrapper">
-                                    <a href="https://onespark.cc/writings/hrt/make-your-own-hrt">
+                                    <a href="/writings/hrt/make-your-own-hrt">
                                         <button class="writingsLinkButton">Make Your Own HRT!
                                             <p class="buttonDescrisptorText">- HRT</p>
                                         </button>
@@ -134,8 +195,16 @@
                         <div class="linksWrapper"> 
                             <div class="subWrapper"> 
                                 <div class="linksBlockWrapper">
-                                    <a href="https://onespark.cc/writings/polemical/Trans_Rights_or_Trans_Liberation">
+                                    <a href="/writings/polemical/Trans_Rights_or_Trans_Liberation">
                                         <button class="writingsLinkButton">Trans Rights or Trans Liberation? 
+                                            <p class="buttonDescrisptorText">- Trans Liberation</p>
+                                        </button>
+                                    </a>
+                                </div>
+
+                                <div class="linksBlockWrapper">
+                                    <a href="/writings/polemical/the-day-of-heroism-for-trans-people">
+                                        <button class="writingsLinkButton">The Day of Heroism For Trans People
                                             <p class="buttonDescrisptorText">- Trans Liberation</p>
                                         </button>
                                     </a>
@@ -158,20 +227,8 @@
     main section
     ================================================================================
     -->
-
-    <!-- 
-    ================================================================================
-    bottom section
-    ===============================================================================
-    -->
-        <div id="bottomWrapper">
-        </div>
-    <!-- 
-    ================================================================================
-    bottom section
-    ===============================================================================
-    -->
     <script src="/script.js"></script>
+    <script src="/mobile.js"></script>
 
       
   </body>

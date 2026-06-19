@@ -21,580 +21,491 @@
 7PPPPPPP?^    :!J5PPPPPPPPPPPPPPPPPPPPPY775PPPPPP7  
 ~PPPPP?:         .^!?Y5PPPPPPPPPPPP5J!:.  .?PPPP5~
 
-People's war and revolution till communism!
+people's war and revolution till communism!
 */
 
 /*
 ================================================================================
-basic styliization
-================================================================================
-*/
-html {
-  overflow-x: hidden;
-  background-size: 100% 100%;
-  color: black;
-  background-color: white;
-  /* background-image: linear-gradient(90deg, #e80000, #ffc9d3); */
-  background:
-  linear-gradient(217deg, rgba(255, 0, 98, 0.8), transparent 70.71%),
-  linear-gradient(127deg, rgba(0, 251, 255, 0.8), transparent 70.71%),
-  linear-gradient(336deg, rgba(247, 0, 255, 0.8), transparent 70.71%);
-  font-family: 'BPmono', 'ms gothic';
-  text-align: center;
-  font-size: 16px;
-}
-
-
-body {
-  margin: 0;
-}
-/*
-================================================================================
-basic styliization
+global styliization
 ================================================================================
 */
 
-/*
-================================================================================
-text styliization
-================================================================================
-*/
+  /*
+  ================================================================================
+  basic styliization
+  ================================================================================
+  */
+  :root {
+    --bgRed:               rgba(255, 200, 220, 0.4);  
+    --bgBlue:              rgba(200, 240, 255, 0.4);  
+    --bgPink:              rgba(230, 200, 255, 0.4);
+    --textRed:             rgb(232, 0, 0);
+    --introBoxRed:         rgba(220, 20, 60, 0.18);
+    --borderGold:          rgb(235, 204, 0);
+    --realBgRed:           rgb(255, 138, 153);
 
-@font-face {
-  font-family: 'BPmono';
-  src: url('https://file.garden/ZsJltiD-bXBSm0-A/bpmono/BPmono.ttf'); 
-}
+    --menuTopBorder:       rgba(255, 44, 84, 0.8);
+    --menuBottomBorder:    rgba(26, 179, 255, 0.4);
+    --versionGreenText:    rgb(43, 209, 43);
+    --versionGreenGlow:    rgb(90, 240, 90);    
 
-.globalTitleText {
-    color:#e80000;
-    font-size: 28px;
-    font-weight: bold;
-    text-shadow: 0 0 8px #e80000;
+    --lushRed:             rgb(215, 35, 35);
+    --baseWhite:           rgb(247, 248, 253);
+    --baseSemiTransWhite:  rgba(247, 248, 253, 0.186);
+    --baseBlack:           rgb(30, 0, 0);
+    --baseCyan:            rgb(39, 218, 254);
+    --baseBlue:            rgb(40, 72, 253);
+    --baseDeepRed:         rgb(169, 0, 20);
+    --baseGrey:            rgb(228, 228, 236);
+    --baseTransparent:     rgba(255, 255, 255, 0.0);
+    --baseGold:            rgb(255, 215, 0);
+
+    --buttonAbberationR:   rgba(135, 0, 0, 0.8);
+    --buttonAbberationB:   rgba(0, 0, 135, 0.8);
+
+    --boxBackRed:          rgba(255, 85, 85, 0.2);
+    --boxColorRed:         rgb(119, 0, 0);
+
+    --curBoxBorderGreen:   rgb(0, 128, 0);
+    --curBoxBackGreen:     rgba(182, 255, 209, 0.8);
+    --curBoxColorGreen:    rgb(1, 65, 1);
+
+    --homeLinkBtnHover:    rgb(250, 215, 215);
+
+    --refBoxBackBlue:      rgba(20, 60, 220, 0.18);
+    --refBoxBorderBlue:    rgb(0, 0, 255);
+    --refBoxColorBlue:     rgb(0, 0, 139);
+
+
+    transition-property: color, background-color, border;
+    transition-duration: 0.5s;
   }
-  .titleText {
-    color:#e80000;
-    font-size: 28px;
-    font-weight: bold;
-    text-align: center;
-  }
+    :root.darkMode {
+      --bgRed:               rgba(255, 20, 147, 0.8);  
+      --bgBlue:              rgba(0, 255, 255, 0.8);  
+      --bgPink:              rgba(138, 43, 226, 0.8);
+      --textRed:             rgb(255, 23, 23);
+      --introBoxRed:         rgba(235, 35, 75, 0.18);
+      --borderGold:          rgb(236, 207, 17);
+      --realBgRed:           rgb(117, 0, 15);
+      
+      --menuTopBorder:       rgba(211, 0, 84, 0.8);
+      --menuBottomBorder:    rgba(0, 153, 229, 0.4);
+      --versionGreenText:    rgb(46, 212, 46);
+      --versionGreenGlow:    rgb(15, 165, 15);
 
-  .headingText {
-    color:#e80000;
-    font-size: 24px;
-    font-weight: bold;
-  }
+      --lushRed:             rgb(220, 40, 40);
+      --baseWhite:           rgb(30, 30, 30);
+      --baseBlack:           rgb(241, 241, 252);
+      --baseSemiTransWhite:  rgba(2, 3, 8, 0.19);
+      --baseCyan:            rgb(1, 180, 216);
+      --baseBlue:            rgb(40, 72, 253);
+      --baseDeepRed:         rgb(255, 86, 106);
+      --baseGrey:            rgb(19, 19, 27);
+      --baseTransparent:     rgba(0, 0, 0, 0);
+      --baseGold:            rgb(255, 215, 0);
 
-  .subHeadingText {
-    color:#e80000;
-    font-size: 20px;
-    font-weight: bold;
-  }
+      --buttonAbberationR:   rgba(255, 120, 120, 0.8);
+      --buttonAbberationB:   rgba(120, 120, 255, 0.8);
 
-  .subSubHeadingText {
-    color:#e80000;
-    font-size: 18px;
-    font-weight: bold;
-  }
+      --boxBackRed:          rgba(170, 0, 0, 0.2);
+      --boxColorRed:         rgb(255, 136, 136);
 
-  .microHeadingText {
-    color:#e80000;
-    font-size: 14px;
-    font-weight: bold;
-  }
+      --curBoxBorderGreen:   rgb(127, 255, 127);
+      --curBoxBackGreen:     rgba(0, 73, 27, 0.5);
+      --curBoxColorGreen:    rgb(190, 254, 190);
 
-h1 {
-  font-size: 32px
-}
+      --homeLinkBtnHover:    rgb(40, 5, 5);
 
-h2 {
-  font-size: 28px
-}
+      --refBoxBackBlue:      rgba(35, 75, 235, 0.18);
+      --refBoxBorderBlue:    rgb(0, 0, 255);
+      --refBoxColorBlue:     rgb(116, 116, 255);
+    }
+  
 
-h3 {
-  font-size: 24px
-}
-
-p {
-  font-size: 12px 
-}
-a {
-  transition-property: color text-shadow;
-  transition-duration: 0.4s;
-}
-a:hover {
-  color: red;
-  text-shadow: 0px 0px 3px red;
-}
-
-.quoteText {
-  box-shadow: 0px 0px 8px red;
-  border-radius: 4px;
-}
-
-/*
-================================================================================
-text styliization
-================================================================================
-*/
-
-/*
-================================================================================
-marks stylization
-================================================================================
-*/
-  .standardMark {
-    background-color: white;
-    border: black 3px solid;
-    border-radius: 8px;
-    padding: 4px;
-  }
-
-  .standardGlobalTitleMark {
-    color: #e80000;
-    background-color: white;
-    border: black 3px solid;
-    border-radius: 8px;
-    padding: 4px;
+  html {
+    font-size: 16px;
   }
 
-/*
-================================================================================
-marks stylization
-================================================================================
-*/
-
-
-/*
-================================================================================
-containers
-================================================================================
-*/
-
-.genericContainer {
-  border: #ebcc00 3px solid; 
-  box-shadow: 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black;
-  border-radius: 5px;
-  width: 80%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  padding: 16px;
-  background-size: 100% 100%;
-  background-color: white;
-}
-
-#menuBar {
-  border-top: rgb(255, 44, 251) 5px solid;
-  border-bottom: rgb(26, 179, 255) 5px solid;
-  border-radius: 4px;
-  box-shadow: 0px 0px 5px black, 0px 0px 5px black;
-  height: auto;
-  width: 110%;
-  overflow: hidden;
-  margin-left: -5%;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  margin-right: -10%;
-  padding: 2px;
-  background: linear-gradient(to bottom, rgb(248, 248, 248), rgba(255, 255, 255, 0.186));
-  font-size: 24px;
-}
-
-  .menuButton {
-    border: #fc1f91 3px solid; 
-    border-radius: 8px;
-    box-shadow: 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black;
-    padding-top: 2px;
-    padding-left: 6px;
-    padding-right: 6px;
-    padding-bottom: 2px;
-    font-family: 'BPmono';
-    font-weight: bolder;
-    font-size: 18px;
-    color: black;
-    background-image: url('https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/images/360_F_338033184_8oKq8czljHGktFpBPpytrJAHIZyBMLyL.jpg'); /* change this later to a different image */
+  body {
+    margin: 0;
+    overflow-x: hidden;
     background-size: 100% 100%;
-    transition-property: letter-spacing;
-    transition-duration: 0.5s;
+    color: var(--baseBlack);   
+    /*background:    
+      radial-gradient(circle at 20% 50%, var(--bgRed)),    
+      radial-gradient(circle at 80% 80%, var(--bgBlue)),    
+      radial-gradient(circle at 40% 0%, var(--bgPink));*/
+      background-color: var(--realBgRed);  
+    background-attachment: fixed;
+
+    font-family: 'BPmono';
+    text-align: center;
+    font-size: 16px;
   }
 
-  .menuButton:hover {
-    letter-spacing: 3px;
-  }
 
-#musicPlayer {
-  height: auto;
-  width: auto;
-  margin-right: 16px;
-  margin-left: 16px;
-  color: aquamarine;
-  border: #ebcc00 3px solid;
-  border-radius: 8px;
-  box-shadow: 0px 0px 5px black, 0px 0px 5px black;
-  padding: 4px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  background-size: 100% 100%;
-  background: linear-gradient(217deg, rgb(253, 65, 162), transparent 70.71%), linear-gradient(118deg, rgb(252, 160, 177), transparent 70.71%), linear-gradient(336deg, rgb(0, 255, 145), transparent 70.71%), linear-gradient(92deg, rgb(0, 191, 255), transparent 70.71%);
-  /* background-image: linear-gradient(#ffa5d6, #f70019); */
-  font-size: 24px;
-}
 
-  #playButton{
-    height: 60px;
-    width: 60px;
-    padding: 5px;
-    background: linear-gradient(217deg, rgb(255, 68, 130), transparent 70.71%), linear-gradient(127deg, rgb(21, 249, 234), transparent 70.71%), linear-gradient(336deg, rgb(161, 106, 249), transparent 70.71%);
-    box-shadow: 5px 5px rgba(0, 230, 246, 0.8);
-    border: black 2.5px solid;
-    border-radius: 50%;
-    transition: background-color;
-    transition-duration: 1s;
-  }
+    /*
+    ================================================================================
+    button styliization
+    ================================================================================
+    */
+    button {
+      border: var(--baseBlack) 2px solid;
+      border-radius: 8px;
+      color: var(--baseBlack);
+      background-color: var(--baseTransparent); 
+      font-family: 'BPmono';
+      font-weight: bolder;
+      transition-property: box-shadow;
+      transition-duration: 0.5s;
+    }
+      button:hover{
+        box-shadow: 0px 0px 0px var(--baseBlack);
+      }
+    
+    .linkingButton {
+      font-size: 18px;
+      box-shadow: 3px 3px 0px var(--buttonAbberationB), -3px -2px 0px var(--buttonAbberationR);
+      transition-property: box-shadow;
+      transition-duration: 0.5s;
+    }
+      .linkingButton:hover {
+        box-shadow: 0px 0px 0px var(--baseBlack);
+      }
+    
+    .genPageLinkingButtons {
+      transition-property: box-shadow, text-shadow, color, background-color;
+      transition-duration: 0.5s;
+    }
+      .genPageLinkingButtons:hover {
+        box-shadow: none;
+        text-shadow: 0px 0px 1px var(--borderGold), 0px 0px 3px var(--borderGold), 0px 0px 5px var(--borderGold);
+        color: var(--borderGold);
+        background-color: var(--baseDeepRed);
+      }
 
-    #playImage {
-      height: 67%;
+    /*
+    ================================================================================
+    button styliization
+    ================================================================================
+    */
+
+
+    /*
+    ================================================================================
+    menu styliization
+    ================================================================================
+    */
+    #menuBar {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      border-top: var(--borderGold) 5px solid;
+      border-bottom: var(--borderGold) 5px solid;
+      box-shadow: 0px 0px 5px var(--baseBlack), 0px 0px 5px var(--baseBlack);
+      height: auto;
       width: 100%;
+      box-sizing: border-box;
+      overflow: visible;
+      margin-top: 8px;
+      margin-bottom: 8px;
+      padding-left: 1%;
+      padding-right: 1%;
+      background: linear-gradient(to bottom, var(--menuTopBorder), var(--menuBottomBorder));
+      font-size: 24px;
     }
-  
-  #playButton:hover {
-    background-color: red;
-  }
+      #leftMenuContent{
+        display: flex;
+        gap: 1rem;
 
-  #pauseButton{
-    height: 40px;
-    width: 50px;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0);
-    border: black 5px solid;
-    border-radius: 500px;
-  }
+      }
+      #rightMenuContent{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
 
-    #pauseImage {
-      height: 100%;
-      width: 100%;
+      .rightSelections{
+        background-color: var(--baseWhite);
+        height: 30px;
+        font-size: 1rem;
+        color: var(--baseBlack);
+        transition-property: color, background-color, box-shadow;
+        transition-duration: 0.5s;
+        padding: none;
+      }
+        .rightSelections:hover {
+          color: var(--baseWhite);
+          background-color: var(--baseBlack);
+        }
+
+      .menuButton {
+        font-size: 1.125rem;
+        padding-top: 2px;
+        padding-left: 6px;
+        padding-right: 6px;
+        padding-bottom: 2px;
+        border-color: var(--baseBlack);
+        transition-property: letter-spacing, box-shadow, text-shadow, color, background-color;
+        transition-duration: 0.5s;
+      }
+        .menuButton:hover{
+          letter-spacing: 3px;
+        }
+
+      .siteTitle {
+        font-size: 1.125rem;
+        text-transform: uppercase;
+        text-shadow: 0 0 1px var(--lushRed), 0 0 3px var(--lushRed), 0 0 5px var(--lushRed); 
+        color: white;
+      }
+        .siteTitle a{
+          text-decoration: dotted;
+        }
+        .siteTitle a:hover {
+          text-shadow: none;
+          color: white;
+          text-decoration: dashed;
+        }
+
+      .versionText {
+        color: var(--versionGreenText); 
+        text-shadow: 0 0 1px var(--versionGreenGlow), 0 0 3px var(--versionGreenGlow), 0 0 5px var(--versionGreenGlow);
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-bottom: calc(auto);
+      }
+
+      .dropdownContent {
+        position: absolute;
+        top: 120%;
+        left: 50%;
+        transform: translateX(-80%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: auto;
+        overflow: auto;
+        border-radius: 4px;
+        background: var(--baseTransparent);  
+        -webkit-backdrop-filter: blur(8px);  backdrop-filter: blur(8px);
+        box-shadow: 0px 8px 16px 0px var(--baseBlack);
+        transition-property: opacity;
+        z-index: 1;
+      }
+
+      #theDropdown {
+        transition-property: opacity;
+        transition-duration: 1s;
+      }
+        #theDropdown.show {
+          opacity: 1;
+        }
+
+      .dropdownContentWrappers {
+        width: 100%;
+        border-bottom: var(--baseBlack) 1px solid;
+      }
+
+      .dropdownContent a {
+        font-size: 1.125rem;
+        color: var(--baseBlack);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        transition-property: background-color;
+      }
+
+      .dropdown a:hover {
+        background-color: var(--baseWhite);
+      }
+
+      .show {
+        display: block;
+      }
+
+    /*
+    ================================================================================
+    menu styliization
+    ================================================================================
+    */
+
+
+    /*
+    ================================================================================
+    divider styliization
+    ================================================================================
+    */
+    .divider {
+      border: var(--baseBlack) 3px solid;
+      border-radius: 1px;
+      height: 1%;
+      margin: auto;
+      animation-name: dividerAnimation;
+      animation-duration: 8s;
+      animation-iteration-count: infinite;
+    } 
+    @keyframes dividerAnimation {
+      0% {background: var(--lushRed);
+      box-shadow: 0px 0px 1px var(--lushRed), 0px 0px 3px var(--lushRed), 0px 0px 5px var(--lushRed), 0px 0px 7px var(--lushRed);
+      border: var(--lushRed) 3px solid;}
+
+      50% {background: var(--borderGold);
+      box-shadow: 0px 0px 1px var(--borderGold), 0px 0px 3px var(--borderGold), 0px 0px 5px var(--borderGold);
+      border: var(--borderGold) 3px solid;}
+
+      100% {background: var(--lushRed);
+      box-shadow: 0px 0px 1px var(--lushRed), 0px 0px 3px var(--lushRed), 0px 0px 5px var(--lushRed), 0px 0px 7px var(--lushRed);
+      border: var(--lushRed) 3px solid;}
     }
-  
-  #pauseButton:hover {
-    box-shadow: 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black;
-  }
 
-#univChatBox {
-  border: #ebcc00 3px solid; 
-  box-shadow: 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black;
-  border-radius: 5px;
-  width: auto;
-  height: auto;
-  background-size: 100% 100%;
-  background-color: white;
-}
+    
 
-@keyframes dividerAnimation {
-  0% {background: crimson;
-  box-shadow: 0px 0px 1px crimson, 0px 0px 3px crimson, 0px 0px 5px crimson, 0px 0px 7px crimson;
-  border: crimson 3px solid;}
-
-  50% {background: rgb(255, 200, 0);
-  box-shadow: 0px 0px 1px rgb(255, 200, 0), 0px 0px 3px rgb(255, 200, 0), 0px 0px 5px rgb(255, 200, 0);
-  border: rgb(255, 200, 0) 3px solid;}
-
-  100% {background: crimson;
-  box-shadow: 0px 0px 1px crimson, 0px 0px 3px crimson, 0px 0px 5px crimson, 0px 0px 7px crimson;
-  border: crimson 3px solid;}
-}
-
-.divider {
-  border: black 3px solid;
-  border-radius: 1px;
-  height: 1%;
-  margin: auto;
-  animation-name: dividerAnimation;
-  animation-duration: 8s;
-  animation-iteration-count: infinite;
-} 
-
-.linkingButton {
-  border: #fc1f91 3px solid;
-  border-radius: 5px;
-  background-color: rgb(242, 208, 255);
-  box-shadow: 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black;
-  padding-top: 2px;
-  padding-left: 6px;
-  padding-right: 6px;
-  padding-bottom: 2px;
-  margin-top: 2%;
-  font-family: 'BPmono';
-  font-weight: bolder;
-  font-size: 18px;
-  color: black;
-  transition-property: box-shadow;
-  transition-duration: 0.5s;
-}
-  .linkingButton:hover{
-    box-shadow: 0px 0px 5px rgb(0, 218, 178);
-
-  }
-
+    /*
+    ================================================================================
+    divider styliization 
+    ================================================================================
+    */
 
   /*
   ================================================================================
-  links stylization
+  basic styliization
   ================================================================================
   */
 
   /*
   ================================================================================
-  links stylization
+  text styliization
   ================================================================================
   */
 
-  /*
-  ================================================================================
-  writings stylization
-  ================================================================================
-  */
-  .homeContainer {
-    position: relative;
-    background-color: white;
-    color: rgb(148, 0, 0);
-    height: auto;
-    margin-top: 2%;
-    margin-left: 4%;
-    margin-right: 4%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-left: 10%;
-    padding-right: 10%;
-    border: #ebcc00 3px solid; 
-    box-shadow: 0px 0px 5px black, 0px 0px 5px black;
-    border-radius: 5px;
-  }
-    .mainWritingsText {
-      color: rgb(148, 0, 0);
-      font-size: 12px;
-    }
-  
-  .writingsHomeButton{
-    position: absolute;
-    top: 2%;
-    left: 2%;
-    background-color: white;
-    width: 20%;
-    border: black 2px solid;
-    border-radius: 3px;
+  @font-face {
     font-family: 'BPmono';
-    font-weight: bolder;
-    font-size: 1.5vw;
-    box-shadow: 0px 0px 5px black;
-    transition-property: background-color;
-    transition-duration: 0.5s;
+    src: url('https://file.garden/ZsJltiD-bXBSm0-A/bpmono/BPmono.ttf'); 
   }
-    .writingsHomeButton:hover{
-      background-color: rgb(250, 215, 215);
+
+  .globalTitleText {
+      color:var(--textRed);
+      font-size: 28px;
+      font-weight: bold;
+      text-shadow: 0 0 8px var(--textRed);
     }
-    .writingsHomeButtonImage{
-      height: 10%;
-      width: 10%;
-      transform: translateY(15%);
-    }
-
-.genericContainerMirror {
-  position: relative;
-  border: #ebcc00 3px solid; 
-  box-shadow: 0px 0px 5px black, 0px 0px 5px black;
-  border-radius: 5px;
-  width: 80%;
-  height: auto;
-  width: auto;
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  padding-top: 3%;
-  padding-left: 1%;
-  padding-right: 1%;
-  padding-bottom: 1%;
-  background-size: 100% 100%;
-  background-color: white;
-}
-  
-  .writingsHomeButtonMirror{
-    position: absolute;
-    top: 1%;
-    left: 1%;
-    background-color: white;
-    width: 10%;
-    border: black 2px solid;
-    border-radius: 3px;
-    font-family: 'BPmono';
-    font-weight: bolder;
-    font-size: 1.5vw;
-    box-shadow: 0px 0px 5px black;
-    transition-property: background-color;
-    transition-duration: 0.5s;
-  }
-    .writingsHomeButtonMirror:hover{
-      background-color: rgb(250, 215, 215);
-    }
-    .writingsHomeButtonImageMirror{
-      height: 20%;
-      width: 20%;
-      transform: translateY(15%);
-    }
-
-  .writingsLinkButton {
-    background-color: white;
-    color: rgb(148, 0, 0);
-    border: #570101 1px solid; 
-    border-radius: 2px;
-    width: 360px;
-    height: 120px;
-    margin: 0.2%;
-    padding-top: 2px;
-    padding-left: 6px;
-    padding-right: 6px;
-    padding-bottom: 2px;
-    font-family: 'BPmono';
-    font-weight: bolder;
-    font-size: 20px;
-    text-align: left;
-    transition: background-color, text-decoration, text-shadow;
-    transition-duration: 0.5s;
-  }
-
-  .writingsLinkButton:hover {
-    background-color: rgb(248, 216, 216);
-    text-decoration: underline;
-    text-shadow: 0px 0px 5px red;
-  }
-
-  .buttonDescrisptorText {
-    color: #570101a4;
-  }
-
-  .writingsDivider {
-  border-top: #ff0000 3px dotted;
-  border-radius: 2px;
-  height: 1%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2%;
-  }
-
-  .introBox {
-    border: red 1px solid;
-    border-radius: 3px;
-    background-color: rgba(220, 20, 60, 0.18);
-    color: crimson;
-    width: 60%;
-    margin: auto;
-    padding-left: 2%;
-    padding-right: 2%;
-  }
-    .boxTitleText{
-      color:#e80000;
-      font-size: 2vw;
+    .titleText {
+      color:var(--textRed);
+      font-size: 1.75rem;
       font-weight: bold;
       text-align: center;
-
-    }
-    .boxHeadingText{
-      color:#e80000;
-      font-size: 1vw;
-      font-weight: bold;
-    }
-    .boxSubHeadingText{
-      color:#e80000;
-      font-size: 0.8vw;
-      font-weight: bold;
-    }
-    .boxSubSubHeadingText{
-      color:#e80000;
-      font-size: 0.6vw;
-      font-weight: bold;
-    }
-    .boxMicroHeadingText {
-      color:#e80000;
-      font-size: 0.4vw;
-      font-weight: bold;
-    }
-    .boxContentMain{
-      color:#e80000;
-      font-size: 1vw;
-      font-weight: bold;
-      text-indent: 1%;
-    }
-    .boxContentSub{
-      color:#e80000;
-      font-size: 0.8vw;
-      font-weight: bold;
-      text-indent: 2%;
-    }
-    .boxContentSubSub{
-      color:#e80000;
-      font-size: 0.6vw;
-      font-weight: bold;
-      text-indent: 3%;
     }
 
-    .writingsTitleText {
-    color:rgb(240, 180, 0);
-    font-size: 28px;
-    font-weight: bold;
+    .headingText {
+      color:var(--textRed);
+      font-size: 1.5rem;
+      font-weight: bold;
     }
 
-    #byWrapper{
-      width: 100%;
+    .subHeadingText {
+      color:var(--textRed);
+      font-size: 1.25rem;
+      font-weight: bold;
     }
-      #byWrapper div {
-        width: 49%;
-        display: inline-block;
-      }
 
-      #right {
-        text-align: right;
-      }
-      #left{
-        text-align: left;
-      }
-    .boxLinks{
-      color: #e80000;
+    .subSubHeadingText {
+      color:var(--textRed);
+      font-size: 1.125rem;
+      font-weight: bold;
     }
-  
-  .ReferencesBox {
-    border: blue 1px solid;
-    border-radius: 3px;
-    background-color: rgba(20, 60, 220, 0.18);
-    color: darkblue;
-    width: 85%;
-    margin: auto;
-    padding-left: 2%;
-    padding-right: 2%;
+
+    .microHeadingText {
+      color:var(--textRed);
+      font-size: 0.875rem;
+      font-weight: bold;
+    }
+
+  h1 {
+    font-size: 2rem
   }
-    .referenceText {
-      color: darkblue;
-      font-size: 16px;
-      text-align: left;
-    }
 
-.writingQuoteText {
-  box-shadow: 0px 0px 4px red;
-  border: red 1px solid;
-  border-radius: 4px;
-}
+  h2 {
+    font-size: 1.75rem
+  }
 
-.bodyText {
-  width: 80%;
-  margin: auto;
-}
-.bodyTextSubWrapper > * {
-  font-size: 14px;
-}
+  h3 {
+    font-size: 1.5rem
+  }
+
+  p {
+    font-size: 1rem 
+  }
+
+  a {
+    color: var(--refBoxColorBlue);
+    transition-property: color, text-shadow;
+    transition-duration: 0.4s;
+  }
+  a:hover {
+    color: var(--textRed);
+    text-shadow: 0px 0px 3px var(--textRed);
+  }
+
+  .quoteText {
+    box-shadow: 0px 0px 8px var(--textRed);
+    border-radius: 4px;
+  }
+
   /*
   ================================================================================
-  writings stylization
+  text styliization
+  ================================================================================
+  */
+
+  /*
+  ================================================================================
+  marks stylization
+  ================================================================================
+  */
+    .standardMark {
+      background-color: var(--baseWhite);
+      border: var(--baseBlack) 2px solid;
+      border-radius: 8px;
+      padding: 4px;
+    }
+
+  /*
+  ================================================================================
+  marks stylization
+  ================================================================================
+  */
+
+
+  /*
+  ================================================================================
+  containers
+  ================================================================================
+  */
+
+  .genericContainer {
+    border: var(--borderGold) 3px solid; 
+    box-shadow: 0px 0px 5px var(--baseBlack), 0px 0px 5px var(--baseBlack), 0px 0px 5px var(--baseBlack);
+    border-radius: 5px;
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 16px;
+    background-size: 100% 100%;
+    background-color: var(--baseWhite);
+  }
+  /*
+  ================================================================================
+  containers
   ================================================================================
   */
 
@@ -609,27 +520,6 @@ containers
       padding: 0px;
       margin: 16px;
     }
-    /*
-    ================================================================================
-    bottom bar
-    ================================================================================
-    */ 
-      #bottomBar {
-        position: static;
-        border: #ebcc00 3px solid;
-        border-radius: 8px;
-         box-shadow: 0px 0px 5px black, 0px 0px 5px black;
-        height: auto;
-        width: auto;
-        padding: 2px;
-        background-color: white;
-        font-size: 24px;
-      }
-    /*
-    ================================================================================
-    bottom bar
-    ================================================================================
-    */ 
 
     /*
     ================================================================================
@@ -639,14 +529,14 @@ containers
       #sloganBar {
         position: static;
         float: bottom;
-        border: #ebcc00 3px solid;
+        border: var(--borderGold) 3px solid;
         border-radius: 8px;
-        box-shadow: 0px 0px 5px black, 0px 0px 5px black;
+        box-shadow: 0px 0px 5px var(--baseBlack), 0px 0px 5px var(--baseBlack);
         height: auto;
         width: auto;
         padding: 8px;
-        color: black;
-        background: rgba(255, 0, 0, 0.743)
+        color: var(--baseBlack);
+        background: var(--lushRed);
       }
     /*
     ================================================================================
@@ -659,15 +549,16 @@ containers
     bottom slogan
     ================================================================================
     */ 
-    #sloganSlop {
-      color: gold;
-      text-shadow: 0px 0px 1px goldenrod, 0px 0px 3px goldenrod, 0px 0px 5px goldenrod, 0px 0px 7px goldenrod, 0px 0px 9px goldenrod;
+    #sloganText {
+      color: var(--baseGold);
+      text-shadow: 0px 0px 1px var(--borderGold), 0px 0px 3px var(--borderGold), 0px 0px 5px var(--borderGold), 0px 0px 7px var(--borderGold), 0px 0px 9px var(--borderGold);
     }
     /*
     ================================================================================
     bottom slogan
     ================================================================================
     */
+
   /*
   ================================================================================
   bottom section
@@ -676,8 +567,1125 @@ containers
 
 /*
 ================================================================================
-containers
+global styliization
 ================================================================================
 */
 
+/*
+================================================================================
+index styliization
+================================================================================
+*/
+
+  /*
+  ================================================================================
+  main index divs
+  ================================================================================
+  */
+      .indexDivWrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+        gap: 16px;
+        justify-content: center;
+        margin-top: 16px;
+        margin: 16px;
+      }
+          
+      #introBox {
+        text-align: center;
+        color: var(--baseBlack);
+        border: var(--borderGold) 3px solid;
+        border-radius: 8px;
+        box-shadow: 0px 0px 5px var(--baseBlack), 0px 0px 5px var(--baseBlack);
+        padding: 8px;
+        background-size: 100% 100%;
+        background-color: var(--baseWhite);
+      }
+
+        .linksButtons {
+          margin-top: 5px;
+          height: 60px;
+          width: 60px;
+          padding: 1px;
+          padding-right: 16px;
+          background: linear-gradient(var(--baseDeepRed), var(--baseTransparent));
+          box-shadow: 5px 5px var(--baseCyan);
+          border: var(--baseBlack) 3px solid;
+          border-radius: 15%;
+          transition: background-color, box-shadow;
+          transition-duration: 0.5s;
+          overflow: hidden;
+        }
+          .linksButtons:hover{
+            background-color: var(--lushRed);
+            box-shadow: 5px 5px var(--baseCyan);
+          }
+
+        .buttonImage{
+          height: 80%;
+          width: auto;
+        }
+
+        #maoGif {
+          height: 12.5%;
+          width: 25%;
+          border: var(--baseBlack) 2px solid;
+          border-radius: 3px;
+          box-shadow: 5px 5px var(--baseCyan);
+          transform: translateY(-10px);
+          transition-property: box-shadow;
+          transition-duration: 1s;
+        }
+          #maoGif:hover{
+            box-shadow: 5px 5px var(--lushRed);
+          }
+        
+        @media (max-width: 1248px) {
+          #maoGif {
+            width: 16%;
+          }
+        }
+
+    /*
+    ================================================================================
+    links box
+    ================================================================================
+    */
+      #linksBox {
+        color: var(--baseBlack);
+        border: var(--borderGold) 3px solid;
+        border-radius: 8px;
+        box-shadow: 0px 0px 5px var(--baseBlack), 0px 0px 5px var(--baseBlack);
+        padding: 8px;
+        background-size: 100% 100%;
+        background-color: var(--baseWhite);
+      }
+
+        .linkBlock {
+          position: relative;
+          color: var(--textRed);
+          border: var(--borderGold) 3px solid;
+          border-radius: 20px;
+          box-shadow: 0px 0px 5px var(--baseBlack), 0px 0px 5px var(--baseBlack);
+          height: 5%;
+          width: 100%;
+          margin: auto;
+          margin-top: 3%;
+          padding-top: 15%;
+          background-size: 100% 100%;
+          transition-property: box-shadow;
+          transition-duration: 0.4s;
+        }
+          .linkBlock:hover {
+            box-shadow: 0px 0px 1px var(--borderGold), 0px 0px 3px var(--borderGold), 0px 0px 5px var(--borderGold), 0px 0px 7px var(--borderGold);
+          }
+            #iclBlock {
+              background-image: url(https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/Link%20blocks/ICLBlock-final.png);
+            }
+
+            #marxistsDotOrgBlock {
+              background-image: url(https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/Link%20blocks/marxistsdotorg%20block.png);
+            }
+
+            #redHeraldBlock {
+              background-image: url(https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/Link%20blocks/redherald%20block.png);
+            }
+
+            #diyBlock {
+              background-image: url(https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/Link%20blocks/transdotdiy.png);
+            }
+
+    /*
+    ================================================================================
+    links box
+    ================================================================================
+    */
+
+      #marxismAndTransitionBox {
+        padding: 8px;
+        border: var(--borderGold) 3px solid;
+        border-radius: 8px;
+        box-shadow: 0px 0px 5px var(--baseBlack), 0px 0px 5px var(--baseBlack);
+        background-color: var(--baseWhite); 
+      }
+
+    /*
+    ================================================================================
+    plans box
+    ================================================================================
+    */
+    
+      #plansBox {
+        padding: 8px;
+        border: var(--borderGold) 3px solid;
+        border-radius: 8px;
+        box-shadow: 0px 0px 5px var(--baseBlack), 0px 0px 5px var(--baseBlack);
+        background-color: var(--baseWhite);
+      }
+
+        .plansText {
+          text-align: left;
+        }
+        .incompleteText {
+          color: var(--lushRed);
+        }
+        .completeText {
+          color: var(--versionGreenText);
+        }
+
+    /*
+    ================================================================================
+    plans box
+    ================================================================================
+    */
+
+
+    /*
+    ================================================================================
+    new box
+    ================================================================================
+    */
+
+      #newBox {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        color: var(--baseBlack);
+        border: var(--borderGold) 3px solid;
+        border-radius: 8px;
+        box-shadow: 0px 0px 5px var(--baseBlack), 0px 0px 5px var(--baseBlack);
+        height: auto;
+        width: auto;
+        padding: 15px;
+        background-size: 100% 100%;
+        background-color: var(--baseWhite);
+      }
+
+      #image1 {
+        border: var(--borderGold) 3px solid;
+        border-radius: 8px;
+        box-shadow: 0px 0px 5px var(--baseBlack), 0px 0px 5px var(--baseBlack);
+        background-image: url(https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/images/G95WXPBaIAAi4S2.jpg);
+        background-size: 100% 100%;
+        background-color: var(--baseWhite); 
+      }
+
+      #image2 {
+        border: var(--borderGold) 3px solid;
+        border-radius: 8px;
+        width: auto;
+        height: 280px;
+        margin-left: 16px;
+        margin-right: 16px;
+        box-shadow: 0px 0px 5px var(--baseBlack), 0px 0px 5px var(--baseBlack);
+        background-image: url(https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/images/larpimage2.png);
+        background-size: 100% 100%;
+        background-color: var(--lushRed); 
+      }
+
+      #newBoxTitleText {
+        background-color: var(--textRed);
+        color: black;
+        border-radius: 8px; 
+        padding: 4px; 
+        width: min-content;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0px 0px 1px var(--baseBlack), 0px 0px 3px var(--baseBlack), 0px 0px 5px var(--baseBlack);
+        border: var(--baseBlack) 2px solid;
+      }
+
+    /*
+    ================================================================================
+    new box
+    ================================================================================
+    */
+  /*
+  ================================================================================
+  main index divs
+  ================================================================================
+  */
+
+/*
+================================================================================
+index styliization
+================================================================================
+*/
+
+
+
+/*
+================================================================================
+about styliization
+================================================================================
+*/
+
+  .aboutBoxTextWrapper {
+      margin-top: 5px;
+      width: auto;
+      border: var(--baseBlack) 2px solid;
+      border-radius: 8px;
+      box-shadow: 0px 0px 5px var(--baseBlack), 0px 0px 5px var(--baseBlack);
+      background-color: var(--introBoxRed);
+      padding: 8px;
+  }
+
+  .twoDivsWrapper {
+      display: flex;
+      flex-direction: row;
+      margin-top: 8px;
+      margin-bottom: 16px;
+  }
+
+      .leftSegment {
+          width: 5%;
+          margin: auto;
+          transform: translateX(100%);
+      }
+
+      .rightSegment {
+          width: 60%;
+          margin: auto;
+      }
+
+  #additionsWrapper {
+      width: 60%;
+      margin: auto;
+      text-align: left;
+  }
+  .functionalAdditions {
+      box-shadow: 0 0 1px var(--borderGold), 0 0 3px var(--borderGold), 0 0 5px var(--borderGold);
+      border-radius: 4px;
+  }  
+  .contentAdditions {
+      box-shadow: 0 0 1px var(--lushRed), 0 0 3px var(--lushRed), 0 0 5px var(--lushRed);
+      border-radius: 4px;
+  }
+
+
+  .textHighlight {
+      color: var(--lushRed); 
+      text-shadow: 1px 1px var(--baseDeepRed);
+  }
+
+  #contactsWrapper {
+      margin-left: 35%;
+  }
+
+  #emailButton {
+    background-color: var(--lushRed);
+    border: var(--baseBlack) 2px solid;
+    box-shadow: 0px 0px 1px var(--baseBlack), 0px 0px 3px var(--baseBlack), 0px 0px 5px var(--baseBlack);
+    border-radius: 4px;
+    padding-top: 5%;
+    margin-right: 8px;
+  }
+    #emailImage {
+      margin: auto;
+      height: 80%; 
+      width: 80%;
+    }
+
+/*
+================================================================================
+about styliization
+================================================================================
+*/
+
+
+
+/*
+================================================================================
+updates styliization
+================================================================================
+*/
+
+
+#updatesWrapper {
+    text-align: left;
+}
+
+/*
+================================================================================
+updates styliization
+================================================================================
+*/
+
+
+
+/*
+================================================================================
+recommended styliization
+================================================================================
+*/
+
+.disclaimerBox {
+    border: var(--lushRed) 1px solid;
+    border-radius: 4px;
+    background-color: var(--boxBackRed);
+    color: var(--boxColorRed);
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+#filterBox{
+    margin-bottom: 1%;
+}
+    #filterLines {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 0.2%;
+    }
+    .filterButtons {
+        margin-left: 0.8%;
+        border: var(--baseGrey) 2px solid;
+        height: 40px;
+        width: auto;
+        border-radius: 3px;
+        background-color: var(--baseGrey);
+        color: var(--baseDeepRed);
+        font-family: "BPmono";
+        font-weight: bolder;
+        transition-property: text-shadow, box-shadow;
+        transition-duration: 0.5s;
+    }
+        .filterButtons:hover {
+            text-shadow: 0px 0px 5px var(--textRed);
+            box-shadow: 0px 0px 5px var(--textRed);
+        }
+        #filteredButton {
+            margin-left: 0.8%;
+            border: var(--baseDeepRed) 2px solid;
+            height: 40px;
+            border-radius: 3px;
+            background-color: var(--baseDeepRed);
+            color: rgb(255, 255, 255);
+            font-family: "BPmono";
+            font-weight: bolder;
+            transition-property: text-shadow, box-shadow;
+            transition-duration: 0.8s;
+        }
+            #filteredButton:hover {
+                text-shadow: 0px 0px 5px var(--baseWhite), 0px 0px 7px var(--baseWhite);
+                box-shadow: 0px 0px 5px var(--baseGold);
+            }
+
+.linkHoldingBox {
+    border: var(--baseBlack) 2px solid;
+    border-radius: 2px;
+}
+    .linkBarThing {
+        border-bottom: var(--baseGrey) 1px solid;
+    }
+    .linksContainer {
+        display: flex;
+        flex-direction: row;
+    }
+        .linksContainerLeft {
+            width: 50%;
+            text-align: left;
+            margin: auto;
+            padding-left: 1%;
+        }
+        .linksContainerRight {
+            border-left: grey 1px solid;
+            width: 50%;
+            text-align: left;
+            padding-left: 1%;
+        }
+          .linksContainerRight p {
+            font-size: 12px;
+        }
+
+/*
+================================================================================
+recommended styliization
+================================================================================
+*/
+
+
+
+/*
+================================================================================
+donate styliization
+================================================================================
+*/
+
+.currencyBox {
+    border: var(--baseBlack) 1px solid;
+    border-radius: 4px;
+    background-color: var(--baseGrey) ;
+    margin-top: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 1%;
+    text-align: left;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.addressBox {
+    border: var(--curBoxBorderGreen) 1px solid;
+    border-radius: 4px;
+    background-color: var(--curBoxBackGreen);
+    color: var(--curBoxColorGreen);
+    padding-left: 1%;
+}
+
+/*
+================================================================================
+donate styliization
+================================================================================
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+================================================================================
+writings styliization
+================================================================================
+*/
+
+  /*
+  ================================================================================
+  text styliization
+  ================================================================================
+  */
+
+  .quoteText {
+    box-shadow: 0px 0px 8px red;
+    border-radius: 4px;
+  }
+
+  .leftText {
+    text-align: left;
+  }
+
+  .indentText {
+    margin-left: 50px;
+  }
+
+  /*
+  ================================================================================
+  text styliization
+  ================================================================================
+  */
+
+
+  /*
+  ================================================================================
+  containers
+  ================================================================================
+  */
+  .linksWrapper {
+      display: flex;
+      flex-direction: column;
+      width: auto;
+      padding-top: 0.5%;
+      padding-bottom: 0.5%;
+      border: var(--lushRed) 1px solid;
+      background-color: var(--baseGrey);
+      border-radius: 10px;
+      margin: auto;
+      overflow-x: auto;
+  }
+      .subWrapper {
+          display: flex;
+          flex-direction: row;
+          margin: auto;
+      }
+      .linksBlockWrapper {
+          margin: 0.2%;
+      }
+
+  .genericContainer {
+    border: var(--borderGold) 3px solid; 
+    box-shadow: 0px 0px 5px var(--baseBlack), 0px 0px 5px var(--baseBlack), 0px 0px 5px var(--baseBlack);
+    border-radius: 5px;
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 16px;
+    background-size: 100% 100%;
+    background-color: var(--baseWhite);
+  }
+
+
+    /*
+    ================================================================================
+    links stylization
+    ================================================================================
+    */
+
+    /*
+    ================================================================================
+    links stylization
+    ================================================================================
+    */
+
+    /*
+    ================================================================================
+    writings stylization
+    ================================================================================
+    */
+    .homeContainer {
+      position: relative;
+      background-color: var(--baseWhite);
+      color: var(--baseDeepRed);
+      height: auto;
+      margin-top: 2%;
+      margin-left: 4%;
+      margin-right: 4%;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      padding-left: 10%;
+      padding-right: 10%;
+      border: var(--borderGold) 3px solid; 
+      box-shadow: 0px 0px 5px var(--baseBlack), 0px 0px 5px var(--baseBlack);
+      border-radius: 5px;
+    }
+      .mainWritingsText {
+        color: var(--baseDeepRed);
+        font-size: 12px;
+      }
+
+  .genericContainerMirror {
+    position: relative;
+    border: var(--borderGold) 3px solid; 
+    box-shadow: 0px 0px 5px var(--baseBlack), 0px 0px 5px var(--baseBlack);
+    border-radius: 5px;
+    width: 80%;
+    height: auto;
+    width: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+    background-size: 100% 100%;
+    background-color: var(--baseWhite);
+  }
+
+    .writingsLinkButton {
+      background-color: var(--baseWhite);
+      color: var(--baseDeepRed);
+      border: var(--baseDeepRed) 1px solid; 
+      border-radius: 2px;
+      width: 360px;
+      height: 120px;
+      margin: 0.2%;
+      padding-top: 2px;
+      padding-left: 6px;
+      padding-right: 6px;
+      padding-bottom: 2px;
+      font-family: 'BPmono';
+      font-weight: bolder;
+      font-size: 20px;
+      text-align: left;
+      transition: background-color, text-decoration, text-shadow;
+      transition-duration: 0.5s;
+    }
+
+    .writingsLinkButton:hover {
+      background-color: var(--homeLinkBtnHover);
+      text-decoration: underline;
+      text-shadow: 0px 0px 5px var(--textRed);
+    }
+
+    .buttonDescrisptorText {
+      color: var(--baseDeepRed);
+    }
+
+    .writingsDivider {
+    border-top: var(--textRed) 3px dotted;
+    border-radius: 2px;
+    height: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    }
+
+    .introBox {
+      border: var(--textRed) 1px solid;
+      border-radius: 3px;
+      background-color: var(--introBoxRed);
+      color: var(--lushRed);
+      width: 80%;
+      margin: auto;
+      padding-left: 2%;
+      padding-right: 2%;
+      overflow-y: hidden;
+    }
+      .boxTitleText{
+        color:var(--textRed);
+        font-size: 1.75rem;
+        font-weight: bold;
+        text-align: center;
+
+      }
+      .boxHeadingText{
+        color:var(--textRed);
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      .boxSubHeadingText{
+        color:var(--textRed);
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+      .boxSubSubHeadingText{
+        color:var(--textRed);
+        font-size: 1.125rem;
+        font-weight: bold;
+      }
+      .boxMicroHeadingText {
+        color:var(--textRed);
+        font-size: 0.875rem;
+        font-weight: bold;
+      }
+      .boxContentMain{
+        color:var(--textRed);
+        font-size: 1rem;
+        font-weight: bold;
+        text-indent: 1%;
+      }
+      .boxContentSub{
+        color:var(--textRed);
+        font-size: 0.875rem;
+        font-weight: bold;
+        text-indent: 2%;
+      }
+      .boxContentSubSub{
+        color:var(--textRed);
+        font-size: 0.75rem;
+        font-weight: bold;
+        text-indent: 3%;
+      }
+      .contentsWrapper {
+          display: flex;
+          flex-direction: row;
+          vertical-align: top;
+          justify-content: center;
+          gap: 2%;
+          width: 100%;
+          margin-top: 2px;
+          margin-bottom: 8px;
+      }
+
+      .buttonsBundler {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          align-items: center;
+          justify-content: left;
+          margin-top: 30px;
+      }
+
+      .contentsButton {
+          border: var(--baseBlack) 1px solid; 
+          border-radius: 4px;
+          box-shadow: 3px 3px 0px var(--buttonAbberationB), -3px -3px 0px var(--buttonAbberationR);
+          padding-top: 2px;
+          padding-left: 3px;
+          padding-right: 3px;
+          padding-bottom: 2px;
+          font-family: 'BPmono';
+          font-weight: bolder;
+          font-size: 1.4rem;
+          color: var(--baseBlack);
+          background-color: var(--introBoxRed);
+          background-size: 100% 100%;
+          transition-property: box-shadow, text-shadow, color, background-color;
+          transition-duration: 0.5s;
+      }
+          .contentsButton:hover {
+              box-shadow: 0px 0px 0px var(--baseBlack);
+              text-shadow: 0px 0px 1px var(--borderGold), 0px 0px 3px var(--borderGold), 0px 0px 5px var(--borderGold);
+              color: var(--baseGold);
+              background-color: var(--baseDeepRed);
+          }
+
+      .subContentsButton {
+          border: var(--baseBlack) 1px solid; 
+          border-radius: 4px;
+          box-shadow: 3px 3px 0px var(--buttonAbberationB), -3px -3px 0px var(--buttonAbberationR);
+          padding-top: 2px;
+          padding-left: 6px;
+          padding-right: 6px;
+          padding-bottom: 2px;
+          font-family: 'BPmono';
+          font-weight: bolder;
+          font-size: 0.7rem;
+          color: var(--baseBlack);
+          background-color: var(--introBoxRed);
+          background-size: 100% 100%;
+          transition-property: box-shadow, text-shadow, color, background-color;
+          transition-duration: 0.5s;
+
+      }
+          .subContentsButton:hover {
+              box-shadow: 0px 0px 0px var(--baseBlack);
+              text-shadow: 0px 0px 1px var(--borderGold), 0px 0px 3px var(--borderGold), 0px 0px 5px var(--borderGold);
+              color: var(--baseGold);
+              background-color: var(--baseDeepRed);
+          }
+
+      .writingsTitleText {
+      color:var(--borderGold);
+      font-size: 1.75rem;
+      font-weight: bold;
+      }
+
+      .writingsHeadingText {
+        color:var(--borderGold);
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      #byWrapper{
+        width: 100%;
+      }
+        #byWrapper div {
+          width: 49%;
+          display: inline-block;
+        }
+
+        #right {
+          text-align: right;
+        }
+        #left{
+          text-align: left;
+        }
+      .boxLinks{
+        color: var(--textRed);
+      }
+    
+    .ReferencesBox {
+      border: var(--refBoxBorderBlue) 1px solid;
+      border-radius: 3px;
+      background-color: var(--refBoxBackBlue);
+      color: var(--refBoxColorBlue);
+      width: 85%;
+      margin: auto;
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+      .referenceText {
+        color: var(--refBoxColorBlue);
+        font-size: 16px;
+        text-align: left;
+      }
+      #references {
+        color: var(--refBoxColorBlue);
+      }
+      
+
+  .writingQuoteText {
+    box-shadow: 0px 0px 4px var(--textRed);
+    border: var(--textRed) 1px solid;
+    border-radius: 4px;
+  }
+
+  .bodyText {
+    width: 80%;
+    margin: auto;
+  }
+  .bodyTextSubWrapper > * {
+    font-size: 14px;
+  }
+    /*
+    ================================================================================
+    writings stylization
+    ================================================================================
+    */
+
+    
+
+  /*
+  ================================================================================
+  containers
+  ================================================================================
+  */
+
+/*
+================================================================================
+writings styliization
+================================================================================
+*/
+
+
+
+
+
+
+
+
+/*
+================================================================================
+smaller screens styliization
+================================================================================
+*/
+  .mobileViewWrapper {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+  }
+
+  .mobileMenuWrapper {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: var(--baseBlack) 2px solid;
+    user-select: none;
+  }
+    #mobileLightDarkButton {
+      border: var(--baseBlack) 2px solid;
+      border-radius: 4px;
+      cursor: pointer;
+      user-select: none;
+    }
+  
+  .mobileTitleText {
+    font-size: 1.75em;
+    text-align: center;
+  }
+
+  .mobileHeadingText {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .mobileSubHeadingText {
+    font-size: 1.25em;
+    text-align: center;
+  }
+
+  .mobileSubSubHeadingText {
+    font-size: 1.125em;
+    text-align: center;
+  }
+  .mobileMicroHeadingText {
+    font-size: 0.875em;
+    text-align: center;
+  }
+
+  .mobileArticleLink {
+    color: var(--baseBlack);
+    transition: none;
+    font-size: 1.25em;
+    margin-bottom: 2%;
+  }
+
+    /*
+    ================================================================================
+    index mobile styliization
+    ================================================================================
+    */
+      .mobileGenContainer {
+        display: flex;
+        flex-direction: column;
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-bottom: 1%;
+        border-bottom: var(--baseBlack) 2px solid;
+        text-align: left;
+      }
+
+        .mobileDivider {
+          width: 100%;
+          border-bottom: var(--baseGold) solid;
+          border-radius: 2px;
+          box-shadow: 0px 0px 1px var(--borderGold);  
+        }
+    /*
+    ================================================================================
+    index mobile styliization
+    ================================================================================
+    */
+
+  @media (max-width: 1250px) {
+    /*
+    ================================================================================
+    hiding wrappers
+    ================================================================================
+    */
+      #menuBar {
+        display: none;
+      }
+
+      .indexDivWrapper {
+        display: none;
+      }
+
+      #image2 {
+        display: none;
+      }
+
+      #bottomWrapper {
+        display: none;
+      }
+
+      .genericContainer {
+        display: none;
+      }
+
+      .genericContainerMirror {
+        display: none;
+      }
+
+      .homeContainer {
+        display: none;
+      }
+    /*
+    ================================================================================
+    hiding wrappers
+    ================================================================================
+    */
+
+
+    /*
+    ================================================================================
+    showing wrappers
+    ================================================================================
+    */
+      .mobileViewWrapper {
+        display: flex;
+      }
+
+      .mobileMenuWrapper {
+        display: flex;
+      }
+    /*
+    ================================================================================
+    showing wrappers
+    ================================================================================
+    */
+    body {
+      background-color: var(--baseGrey);
+    }
+  }
+/*
+================================================================================
+smaller screens styliization
+================================================================================
+*/
 

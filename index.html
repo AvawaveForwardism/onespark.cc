@@ -1,250 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>onespark.cc(neocities backup)</title>
+    <title>onespark.cc</title>
     <link rel="icon" type="image/x-icon" href="https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/images/icon.png">
     <!--find the krita file via this link ==> https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/images/icon.kra-->
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-    
-<!-- 
-    ================================================================================
-    page specific styling
-    ================================================================================
-    -->
-    <style>
-      /*
-      ================================================================================
-      main index divs
-      ================================================================================
-      */
-          .indexDivWrapper {
-            display: grid;
-            grid-template-columns: repeat(10, 0.5fr);
-            grid-template-rows: repeat(13, 1fr);
-            gap: 16px;
-            margin-top: 16px;
-            margin: 16px;
-          }
-              
-          #introBox {
-            grid-column: span 3 / span 3;
-            grid-row: span 6 / span 6;
-            text-align: center;
-            color: black;
-            border: #ebcc00 3px solid;
-            border-radius: 8px;
-            box-shadow: 0px 0px 5px black, 0px 0px 5px black;
-            padding: 8px;
-            background-size: 100% 100%;
-            background-color: white;
-          }
-            #introBoxTextWrapper {
-              border: #ebcc00 3px solid;
-              border-radius: 8px;
-              box-shadow: 0px 0px 5px black, 0px 0px 5px black;
-              background-color: aquamarine;
-            }
-
-            .linksButtons {
-              margin-top: 5px;
-              height: 60px;
-              width: 60px;
-              padding: 1px;
-              padding-right: 16px;
-              background: linear-gradient(rgba(255, 0, 0, 0.568), rgba(255, 149, 200, 0.072));
-              box-shadow: 5px 5px rgba(0, 230, 246, 0.8);
-              border: black 3px solid;
-              border-radius: 15%;
-              transition: background-color;
-              transition-duration: 1s;
-              overflow: hidden;
-            }
-
-            .linksButtons:hover{
-              background-color: red;
-            }
-
-            .buttonImage{
-              height: 80%;
-              width: 1fr;
-            }
-
-            #maoGif {
-              height: 12.5%;
-              width: 25%;
-              border: black 2px solid;
-              border-radius: 3px;
-              box-shadow: 5px 5px rgba(0, 230, 246, 0.8);
-              transform: translateY(-10px);
-              transition-property: box-shadow;
-              transition-duration: 1s;
-            }
-
-            #maoGif:hover{
-              box-shadow: 5px 5px rgb(160, 0, 0);
-            }
-
-        /*
-        ================================================================================
-        links box
-        ================================================================================
-        */
-          #linksBox {
-            grid-column: span 3 / span 3;
-            grid-row: span 6 / span 6;
-            grid-column-start: 4;
-            color: black;
-            border: #ebcc00 3px solid;
-            border-radius: 8px;
-            box-shadow: 0px 0px 5px black, 0px 0px 5px black;
-            padding: 8px;
-            background-size: 100% 100%;
-            background-color: white;
-          }
-            .link {
-              position: absolute;
-              width: 100%;
-              height: 100%;
-              top: 0;
-              left: 0;
-              z-index: 1;
-            }
-
-            .linkBlock {
-              position: relative;
-              color: red;
-              border: #ebcc00 3px solid;
-              border-radius: 20px;
-              box-shadow: 0px 0px 5px black, 0px 0px 5px black;
-              height: 5%;
-              width: 100%;
-              margin: auto;
-              margin-top: 3%;
-              padding-top: 15%;
-              background-size: 100% 100%;
-              transition-property: box-shadow;
-              transition-duration: 0.4s;
-            }
-
-            .linkBlock:hover {
-              box-shadow: 0px 0px 1px rgb(255, 196, 0), 0px 0px 3px rgb(255, 196, 0), 0px 0px 5px rgb(255, 196, 0), 0px 0px 7px rgb(255, 196, 0);
-            }
-
-              #iclBlock {
-                background-image: url(https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/Link%20blocks/ICLBlock-final.png);
-              }
-
-              #marxistsDotOrgBlock {
-                background-image: url(https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/Link%20blocks/marxistsdotorg%20block.png);
-              }
-              /* #marx2maoblock {
-                background-image: url(https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/Link%20blocks/marx2mao%20block.png);
-              }
-              #theWorkerBlock {
-                background-image: url(https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/Link%20blocks/theworker%20block.png);
-              } */
-
-              #redHeraldBlock {
-                background-image: url(https://redherald.org/wp-content/uploads/2023/03/Banner_TheRedHerald.png);
-                background-color: rgb(252, 163, 163);
-              }
-
-              #diyBlock {
-                background-image: url(https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/Link%20blocks/diyBlock.png);
-              }
-
-        /*
-        ================================================================================
-        links box
-        ================================================================================
-        */
-
-          #marxismAndTransitionBox {
-            grid-column: span 4 / span 4;
-            grid-row: span 6 / span 6;
-            grid-column-start: 7;
-            grid-row-start: 1;
-            padding: 8px;
-            border: #ebcc00 3px solid;
-            border-radius: 8px;
-            box-shadow: 0px 0px 5px black, 0px 0px 5px black;
-            background-color: white; 
-          }
-
-          #plansBox {
-            grid-column: span 3 / span 3;
-            grid-row: span 4 / span 4;
-            grid-column-start: 1;
-            grid-row-start: 7;
-            padding: 8px;
-            border: #ebcc00 3px solid;
-            border-radius: 8px;
-            box-shadow: 0px 0px 5px black, 0px 0px 5px black;
-            background-color: white;
-          }
-
-            .plansText {
-              text-align: left;
-            }
-            .incompleteText {
-              color: crimson;
-            }
-            .completeText {
-              color: green;
-            }
-
-          #newBox {
-            grid-column: span 3 / span 3;
-            grid-row: span 4 / span 4;
-            grid-column-start: 4;
-            grid-row-start: 7;
-            position: static;
-            display: flex;
-            flex-direction: column;
-            color: black;
-            border: #ebcc00 3px solid;
-            border-radius: 8px;
-            box-shadow: 0px 0px 5px black, 0px 0px 5px black;
-            height: auto;
-            width: auto;
-            padding: 15px;
-            background-size: 100% 100%;
-            background-color: white;
-          }
-
-          #image1 {
-            grid-column: span 4 / span 4;
-            grid-row: span 3 / span 3;
-            grid-column-start: 7;
-            grid-row-start: 7;
-            border: #ebcc00 3px solid;
-            border-radius: 8px;
-            box-shadow: 0px 0px 5px black, 0px 0px 5px black;
-            background-image: url(https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/images/G95WXPBaIAAi4S2.jpg);
-            background-size: 100% 100%;
-            background-color: white; 
-          }
-
-          #image2 {
-            grid-column: span 10 / span 10;
-            grid-row: span 3 / span 3;
-            grid-column-start: 1;
-            grid-row-start: 11;
-            border: #ebcc00 3px solid;
-            border-radius: 8px;
-            box-shadow: 0px 0px 5px black, 0px 0px 5px black;
-            background-image: url(https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/images/larpimage2.png);
-            background-size: 100% 100%;
-            background-color: red; 
-          }
-      /*
-      ================================================================================
-      main index divs
-      ================================================================================
-      */
-    </style>
   </head>
 
 
@@ -298,7 +61,59 @@
   ================================================================================
   -->
   <body>
-    
+    <!-- 
+    ================================================================================
+    mobile view section
+    ===============================================================================
+    -->
+        <div class="mobileViewWrapper">
+          <div id="mobileMenu" class="mobileMenuWrapper">
+          </div>
+
+          <div class="mobileGenContainer">
+            <p class="mobileTitleText">Hello!</p>
+              <p><u>site run by:</u> AvawaveForwardism(Ava)</p>
+              <p><u>purpose of the site:</u> Spread a Marxist-Leninist-Maoist perspective on transgender people, (east) African history, and other topics of interest and importance.</p>
+            
+            <div class="mobileDivider"></div>
+              <p><u>check out the source code:</u> <a href="https://github.com/AvawaveForwardism/onespark.cc">code available on github!</a></p>
+              <p><u>email me:</u> <a href="mailto:AvawaveForward@proton.me">AvawaveForward@proton.me</a></p>
+              <p><u>tor address:</u> address</p>
+
+
+          </div>
+
+        <div class="mobileGenContainer">
+          <p class="mobileTitleText">Other Reccomended Sites</p>
+            <p class="mobileMicroHeadingText" style="transform: translateY(-100%);"><i>PLEASE CHECK <a href="/recommended"> MAIN PAGE</a> FOR DISCLAIMER BEFORE PROCEEDING</i></p>
+
+              <p><a style="margin-top: 2%;" href="https://ci-ic.net/">ci-ic.net</a> - international communist league blog</p>
+              <p><a style="margin-top: 2%;" href="https://marxists.org/">marxists.org</a> - theory repository</p>
+              <p><a style="margin-top: 2%;" href="https://redherald.org/">redherald.org</a> - international news publication</p>
+              <p><a style="margin-top: 2%;" href="https://trans.diy/">trans.diy</a> - hrt supplier aggregator</p>
+
+        </div>
+
+        <div class="mobileGenContainer">
+          <p class="mobileTitleText">NEW</p>
+            <p>- <a href="/writings/hrt/make-your-own-hrt">"Make Your Own HRT!</a> Guide</p>
+            <p>- <a href="/hrt/topical-calculator">Topical Calculator</a></p>
+            <p>- Dedicated Mobile View</p>
+        </div>
+      </div>
+    <!-- 
+    ================================================================================
+    mobile view section
+    ===============================================================================
+    -->
+
+
+
+
+
+
+
+
     <!-- 
     ================================================================================
     top section
@@ -345,10 +160,10 @@
                 </span>
           
                 <div class="divider" style="margin-top: 8%; margin-bottom: 8%;"></div>
-                <a href="https://github.com/AvawaveForwardism"><button class="linksButtons" style="transform: translateY(3%);"><img style="transform: translateX(-10px);" class="buttonImage" src="https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/images/Github-Logo-Transparent-Background-PNG.png"></button></a>
-                <a href="mailto:AvawaveForward@proton.me"><button class="linksButtons"><img style="height: 70%;" class="buttonImage" src="https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/images/email_PNG100742-1714194901.png"></button></a>
+                <a href="https://github.com/AvawaveForwardism/onespark.cc"><button class="linksButtons linkingButton" style="transform: translateY(3%);"><img style="transform: translateX(-10px);" class="buttonImage" src="https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/images/Github-Logo-Transparent-Background-PNG.png"></button></a>
+                <a href="mailto:AvawaveForward@proton.me"><button class="linksButtons linkingButton"><img style="height: 70%;" class="buttonImage" src="https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/images/email_PNG100742-1714194901.png"></button></a>
                 
-                <b><h2><a href="https://onespark.cc/about"><button class="linkingButton">Main About Page</button></a></h2></b>
+                <b><h2><a href="/about"><button class="linkingButton genPageLinkingButtons">Main About Page</button></a></h2></b>
 
                 <img id="maoGif" src="https://file.garden/ZsJltiD-bXBSm0-A/Website%20Media/images/mao.gif">
           </div>
@@ -367,7 +182,7 @@
           <div id="linksBox">
             <p class="titleText">Other Reccomended Sites</p>
               <p><b><i style="color: crimson; text-shadow: 0 0 1px red, 0 0 3px red, 2px 2px rgba(0, 230, 246, 0.8);">PLEASE CHECK MAIN PAGE FOR DISCLAIMER BEFORE PROCEEDING</i></b></p>
-                <a href="https://onespark.cc/recommended"><button class="linkingButton">Main Reccomendations Page</button></a>
+                <a href="/recommended"><button class="linkingButton genPageLinkingButtons">Main Recommendations Page</button></a>
                 
 
                 <div>
@@ -381,7 +196,7 @@
                   <!-- <a href="https://theworker.news"><button class="linkBlock" id="theWorkerBlock"></button></a> -->
                 </div>
                 <div>
-                  <a href="https://diyhrt.market/"><button class="linkBlock" id="diyBlock"></button></a>
+                  <a href="https://trans.diy/"><button class="linkBlock" id="diyBlock"></button></a>
                 </div>
           </div>
             <!-- <div id="marx2maoblock">
@@ -404,9 +219,9 @@
               <p>The trans liberation movement has generally been captured by bourgeois ideologues, notably liberals and post-modernists, leading the movement to be channeled into reformist politics and the limitation of the struggle to merely the “rights” of trans people all the while our situation is becoming more precarious day by day and the bourgeois states worldwide are espousing ever more reactionary transphobic rhetoric. Which in turn exposes the hollow pursuit of <i>only</i> rights for trans people <i>within</i> bourgeois society.</p>
               <p>In such a situation it is imperative that us trans people unite under the only ideology, Marxism-Leninism-Maoism, which can deliver complete liberation. On this basis, this series of documents is drafted to take part in the struggle to repudiate the varying bourgeois views strangling the trans liberation movement.</p>
               <p class="quoteText">"<i>There is no social problem that man cannot solve. The more we apply the principles of Marxism-Leninism-Maoism, the more we will find solutions to new problems in the service of the international proletariat and the peoples of the world. Thus, the political, economic, organizational and military problems we face in the course of the class struggle can be properly solved if we start from the world outlook of the proletariat.</i>"</p>
-              <p>- <a style="color: red;" href="https://redlibrary.info/works/cpb/unite-under-maoism.pdf"> Communist Party of Brazil (Red Fraction), "Unite Under Maoism"</a></p>
+              <p>- <a style="color: var(--textRed);" href="https://redlibrary.info/works/cpb/unite-under-maoism.pdf"> Communist Party of Brazil (Red Fraction), "Unite Under Maoism"</a></p>
               
-              <p class="subHeadingText">Currently Drafting: <a href="https://onespark.cc/writings/marxism-applied-to-transition/ideologically-unshackling">"IN DEFENSE OF TRANSITION"</a></p>
+              <p class="subHeadingText">Currently Drafting: <a href="/writings/marxism-applied-to-transition/ideologically-unshackling">"IN DEFENSE OF TRANSITION"</a></p>
             </div>
         <!-- 
         ================================================================================
@@ -425,7 +240,7 @@
               <p class="plansText">[<b class="incompleteText">INCOMPLETE</b>] 1 - make a tor address for the site</p>
               <p class="plansText">[<b class="incompleteText">INCOMPLETE</b>] 2 - add a dark mode to the site</p>
               <p class="plansText">[<b class="incompleteText">INCOMPLETE</b>] 3 - mobile friendliazation</p>
-              <a href="https://onespark.cc/about"><button class="linkingButton">main plans page</button></a>
+              <a href="/about"><button class="linkingButton genPageLinkingButtons">main plans page</button></a>
           </div>
         <!-- 
         ================================================================================
@@ -440,9 +255,10 @@
         ================================================================================
         -->
           <div id="newBox">
-            <p class="titleText"><mark style="background-color: rgba(255, 0, 0, 0.509); border-radius: 8px; padding: 4px; border: black 2px solid;">NEW</mark></p>
-              <a href="https://onespark.cc/writings/hrt/make-your-own-hrt"><button class="linkingButton">"Make Your Own HRT!" Guide</button></a>
-              <a href="https://onespark.cc/hrt/topical-calculator"><button class="linkingButton">Topical Calculator (IN DEVELOPMENT)</button></a>
+            <p class="titleText" id="newBoxTitleText">NEW</p>
+              <p>- <a href="/writings/hrt/make-your-own-hrt"><button class="linkingButton genPageLinkingButtons">"Make Your Own HRT!" Guide</button></a></p>
+              <p>- <a href="/hrt/topical-calculator"><button class="linkingButton genPageLinkingButtons">Topical Calculator (IN DEVELOPMENT)</button></a></p>
+              <p>- Dedicated Mobile View Now Available!</p>
           </div>
         <!-- 
         ================================================================================
@@ -463,6 +279,7 @@
         image 1 (6)
         ================================================================================
         -->
+    </div>
         
 
         <!-- 
@@ -477,7 +294,6 @@
         image 2 (7)
         ================================================================================
         -->
-    </div>
     <!-- 
     ================================================================================
     main section
@@ -496,8 +312,7 @@
     bottom section
     ===============================================================================
     -->
-    <script src="/script.js"></script> 
+    <script src="/script.js"></script>
+    <script src="/mobile.js"></script>
   </body>
-  
 </html>
-
