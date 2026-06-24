@@ -64,7 +64,7 @@ function menuBarOutput(){
       </div> 
   
       <div id="rightMenuContent">
-        <p>v1.2.2.1 - <mark class="standardMark"><span class="versionText">Last Updated: June 19, 2026</span></mark></p>
+        <p>v1.2.2.1 - <mark class="standardMark"><span class="versionText">Last Updated: June 24, 2026</span></mark></p>
         <button id="lightDarkButton" class="linkingButton rightSelections" onclick="themeChange()">☀</button>
 
         <div class="dropdown">
